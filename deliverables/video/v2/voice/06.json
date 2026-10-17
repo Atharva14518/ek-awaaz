@@ -1,0 +1,115 @@
+{
+  "index": 6,
+  "start": 75.6,
+  "end": 86.7,
+  "text": "The caller confirms the incident type and location before coordination begins. See that checkpoint on the timeline? Understanding comes before action.",
+  "voice": "en-IN-NeerjaExpressiveNeural",
+  "words": [
+    {
+      "offset": 980830,
+      "duration": 1081660,
+      "text": "The"
+    },
+    {
+      "offset": 2182500,
+      "duration": 3365410,
+      "text": "caller"
+    },
+    {
+      "offset": 5668330,
+      "duration": 5528750,
+      "text": "confirms"
+    },
+    {
+      "offset": 11317500,
+      "duration": 1442500,
+      "text": "the"
+    },
+    {
+      "offset": 12880000,
+      "duration": 4567500,
+      "text": "incident"
+    },
+    {
+      "offset": 17567500,
+      "duration": 3245000,
+      "text": "type"
+    },
+    {
+      "offset": 20932500,
+      "duration": 1322080,
+      "text": "and"
+    },
+    {
+      "offset": 22375000,
+      "duration": 5528750,
+      "text": "location"
+    },
+    {
+      "offset": 28024160,
+      "duration": 3365410,
+      "text": "before"
+    },
+    {
+      "offset": 31509580,
+      "duration": 7452080,
+      "text": "coordination"
+    },
+    {
+      "offset": 39081660,
+      "duration": 5168330,
+      "text": "begins"
+    },
+    {
+      "offset": 52884580,
+      "duration": 2644160,
+      "text": "See"
+    },
+    {
+      "offset": 55649160,
+      "duration": 1922910,
+      "text": "that"
+    },
+    {
+      "offset": 57692500,
+      "duration": 5408750,
+      "text": "checkpoint"
+    },
+    {
+      "offset": 63221250,
+      "duration": 1081660,
+      "text": "on"
+    },
+    {
+      "offset": 64422910,
+      "duration": 721250,
+      "text": "the"
+    },
+    {
+      "offset": 65264580,
+      "duration": 6250000,
+      "text": "timeline"
+    },
+    {
+      "offset": 79687500,
+      "duration": 6850830,
+      "text": "Understanding"
+    },
+    {
+      "offset": 86658750,
+      "duration": 3005000,
+      "text": "comes"
+    },
+    {
+      "offset": 89783750,
+      "duration": 4327080,
+      "text": "before"
+    },
+    {
+      "offset": 94230830,
+      "duration": 4807500,
+      "text": "action"
+    }
+  ],
+  "audio": "/Users/toofarbutjustin/Downloads/bolna hack/deliverables/video/v2/voice/06.mp3"
+}

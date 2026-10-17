@@ -1,0 +1,267 @@
+[
+  {
+    "start": 0.8980830000000001,
+    "end": 3.349041,
+    "text": "In an emergency, one person shouldn't have"
+  },
+  {
+    "start": 3.374041,
+    "end": 4.663833,
+    "text": "to make five calls."
+  },
+  {
+    "start": 5.403375,
+    "end": 7.613957999999999,
+    "text": "What if one calm conversation could coordinate"
+  },
+  {
+    "start": 7.638958,
+    "end": 8.820583000000001,
+    "text": "the next steps?"
+  },
+  {
+    "start": 10.697971594745537,
+    "end": 12.118538181910177,
+    "text": "Meet Ek Awaaz."
+  },
+  {
+    "start": 12.857058458416718,
+    "end": 15.382160059042032,
+    "text": "A voice-first assistant with a simple idea:"
+  },
+  {
+    "start": 15.45023471127155,
+    "end": 16.67872770875389,
+    "text": "let the caller speak."
+  },
+  {
+    "start": 17.395148115418102,
+    "end": 19.740204448740386,
+    "text": "Let the system handle the coordination."
+  },
+  {
+    "start": 20.798083,
+    "end": 22.232124,
+    "text": "Here's the actual app."
+  },
+  {
+    "start": 23.019707999999998,
+    "end": 25.823958,
+    "text": "A clear starting point, a live console,"
+  },
+  {
+    "start": 25.880291,
+    "end": 27.326332,
+    "text": "and an incident report."
+  },
+  {
+    "start": 28.04375,
+    "end": 30.727791,
+    "text": "Let's walk through a simulated road accident."
+  },
+  {
+    "start": 31.497640502714283,
+    "end": 34.672809051368134,
+    "text": "Listen, understand, confirm, coordinate."
+  },
+  {
+    "start": 35.384359270329185,
+    "end": 36.74081206234952,
+    "text": "Here's how it works."
+  },
+  {
+    "start": 37.898083,
+    "end": 40.702290999999995,
+    "text": "The caller speaks naturally, in Hinglish."
+  },
+  {
+    "start": 41.441832999999995,
+    "end": 44.10183299999999,
+    "text": "A bike accident, with two people injured."
+  },
+  {
+    "start": 44.81925,
+    "end": 47.13066599999999,
+    "text": "Their words appear in the live transcript."
+  },
+  {
+    "start": 47.872125,
+    "end": 50.26766599999999,
+    "text": "Key details are highlighted as they arrive."
+  },
+  {
+    "start": 50.985082999999996,
+    "end": 54.113831999999995,
+    "text": "One conversation, turning into a shared picture."
+  },
+  {
+    "start": 57.798083000000005,
+    "end": 60.5495,
+    "text": "Beside the transcript, the incident card takes"
+  },
+  {
+    "start": 60.5745,
+    "end": 65.035499,
+    "text": "shape. Location, people, and severity come together."
+  },
+  {
+    "start": 65.764916,
+    "end": 67.759125,
+    "text": "Watch the address update when the caller"
+  },
+  {
+    "start": 67.784125,
+    "end": 68.917708,
+    "text": "gives a correction."
+  },
+  {
+    "start": 69.587,
+    "end": 71.761541,
+    "text": "The latest information matters more than the"
+  },
+  {
+    "start": 71.786541,
+    "end": 72.739791,
+    "text": "first guess."
+  },
+  {
+    "start": 75.698083,
+    "end": 77.81249999999999,
+    "text": "The caller confirms the incident type and"
+  },
+  {
+    "start": 77.83749999999999,
+    "end": 80.18499899999999,
+    "text": "location before coordination begins."
+  },
+  {
+    "start": 80.888458,
+    "end": 82.911458,
+    "text": "See that checkpoint on the timeline?"
+  },
+  {
+    "start": 83.56875,
+    "end": 85.663833,
+    "text": "Understanding comes before action."
+  },
+  {
+    "start": 87.59679107636357,
+    "end": 89.06145994468925,
+    "text": "Now the work splits."
+  },
+  {
+    "start": 89.80103679853562,
+    "end": 92.00109798188782,
+    "text": "The listener supports the conversation."
+  },
+  {
+    "start": 92.6595082112335,
+    "end": 94.9117782379214,
+    "text": "The dispatcher handles the next steps in"
+  },
+  {
+    "start": 94.9367782379214,
+    "end": 95.64237091294675,
+    "text": "parallel."
+  },
+  {
+    "start": 96.798083,
+    "end": 99.465375,
+    "text": "In this recorded demo, ambulance and family"
+  },
+  {
+    "start": 99.490375,
+    "end": 102.14566599999999,
+    "text": "outreach are simulated, with a location link"
+  },
+  {
+    "start": 102.170666,
+    "end": 103.724874,
+    "text": "shown alongside them."
+  },
+  {
+    "start": 104.464416,
+    "end": 106.759125,
+    "text": "Each step has a visible status, so"
+  },
+  {
+    "start": 106.784125,
+    "end": 108.574041,
+    "text": "you can follow the handoff instead of"
+  },
+  {
+    "start": 108.599041,
+    "end": 110.910499,
+    "text": "wondering what's happening behind the scenes."
+  },
+  {
+    "start": 112.698083,
+    "end": 115.61779099999998,
+    "text": "When speaking freely isn't possible, the interaction"
+  },
+  {
+    "start": 115.64279099999999,
+    "end": 119.726458,
+    "text": "changes. Silent mode offers discreet prompts and"
+  },
+  {
+    "start": 119.751458,
+    "end": 121.185499,
+    "text": "keypad responses."
+  },
+  {
+    "start": 121.902875,
+    "end": 123.83699999999999,
+    "text": "Less pressure on the caller, with a"
+  },
+  {
+    "start": 123.862,
+    "end": 125.728749,
+    "text": "clear path to the next step."
+  },
+  {
+    "start": 127.798083,
+    "end": 130.5495,
+    "text": "The incident report brings details and timestamped"
+  },
+  {
+    "start": 130.5745,
+    "end": 131.732125,
+    "text": "actions together."
+  },
+  {
+    "start": 132.423541,
+    "end": 134.501916,
+    "text": "This is a prototype, not a live"
+  },
+  {
+    "start": 134.526916,
+    "end": 136.045082,
+    "text": "emergency response."
+  },
+  {
+    "start": 136.786541,
+    "end": 139.638874,
+    "text": "No public emergency service was contacted."
+  },
+  {
+    "start": 140.36825,
+    "end": 142.198916,
+    "text": "Every step stays visible."
+  },
+  {
+    "start": 143.298083,
+    "end": 144.44366599999998,
+    "text": "Ek Awaaz."
+  },
+  {
+    "start": 145.171166,
+    "end": 147.134041,
+    "text": "One voice, many calls."
+  },
+  {
+    "start": 147.86345799999998,
+    "end": 149.11720799999998,
+    "text": "Built with Bolna."
+  }
+]

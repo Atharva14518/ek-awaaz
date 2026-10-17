@@ -1,0 +1,75 @@
+1
+00:00:02,300 --> 00:00:06,100
+When an emergency happens, you get one phone and one voice.
+
+2
+00:00:06,100 --> 00:00:10,200
+But you need help from many people at once.
+
+3
+00:00:16,300 --> 00:00:21,800
+Panic makes every extra call harder.
+
+4
+00:00:21,800 --> 00:00:27,700
+Ek Awaaz turns that one voice into calm, coordinated action.
+
+5
+00:00:35,800 --> 00:00:41,000
+Speak in Hindi, Marathi, English, or a natural mix.
+
+6
+00:00:41,000 --> 00:00:47,200
+We listen, understand, and coordinate trusted test contacts.
+
+7
+00:00:51,000 --> 00:00:56,000
+As the caller speaks, their words appear live.
+
+8
+00:00:56,000 --> 00:01:01,000
+Location, injuries, people, and hazards are highlighted.
+
+9
+00:01:01,000 --> 00:01:06,000
+The incident card fills itself in.
+
+10
+00:01:06,000 --> 00:01:12,500
+When the address is corrected, the old location is replaced.
+
+11
+00:01:12,500 --> 00:01:22,000
+Nothing moves forward until type and location are confirmed.
+
+12
+00:01:36,000 --> 00:01:42,000
+After confirmation, a second agent works in parallel.
+
+13
+00:01:42,000 --> 00:01:48,000
+It prepares tailored calls and sends a location link.
+
+14
+00:01:48,000 --> 00:01:52,000
+Every step stays visible on the timeline.
+
+15
+00:01:56,000 --> 00:02:01,200
+No clear address? A landmark keeps the conversation moving.
+
+16
+00:02:01,200 --> 00:02:06,700
+Silent mode supports private yes-or-no and keypad answers.
+
+17
+00:02:11,000 --> 00:02:16,000
+Every action becomes a timestamped incident report.
+
+18
+00:02:16,000 --> 00:02:22,100
+This build stays in demo mode: test numbers only.
+
+19
+00:02:24,000 --> 00:02:29,900
+Ek Awaaz. One voice, many calls. Built with Bolna for Symphony.

@@ -1,0 +1,155 @@
+{
+  "index": 9,
+  "start": 112.6,
+  "end": 126.7,
+  "text": "When speaking freely isn't possible, the interaction changes. Silent mode offers discreet prompts and keypad responses. Less pressure on the caller, with a clear path to the next step.",
+  "voice": "en-IN-NeerjaExpressiveNeural",
+  "words": [
+    {
+      "offset": 980830,
+      "duration": 1442500,
+      "text": "When"
+    },
+    {
+      "offset": 2543330,
+      "duration": 4927910,
+      "text": "speaking"
+    },
+    {
+      "offset": 7591250,
+      "duration": 3966250,
+      "text": "freely"
+    },
+    {
+      "offset": 11677910,
+      "duration": 2884580,
+      "text": "isn't"
+    },
+    {
+      "offset": 14682500,
+      "duration": 5889580,
+      "text": "possible"
+    },
+    {
+      "offset": 22855830,
+      "duration": 961660,
+      "text": "the"
+    },
+    {
+      "offset": 23937500,
+      "duration": 6370000,
+      "text": "interaction"
+    },
+    {
+      "offset": 30427910,
+      "duration": 5889580,
+      "text": "changes"
+    },
+    {
+      "offset": 45312500,
+      "duration": 5408750,
+      "text": "Silent"
+    },
+    {
+      "offset": 50841250,
+      "duration": 2524160,
+      "text": "mode"
+    },
+    {
+      "offset": 53485410,
+      "duration": 4567500,
+      "text": "offers"
+    },
+    {
+      "offset": 58172910,
+      "duration": 4927910,
+      "text": "discreet"
+    },
+    {
+      "offset": 63221250,
+      "duration": 5649160,
+      "text": "prompts"
+    },
+    {
+      "offset": 68990410,
+      "duration": 2403750,
+      "text": "and"
+    },
+    {
+      "offset": 71514580,
+      "duration": 4567500,
+      "text": "keypad"
+    },
+    {
+      "offset": 76202080,
+      "duration": 8052910,
+      "text": "responses"
+    },
+    {
+      "offset": 93028750,
+      "duration": 3245000,
+      "text": "Less"
+    },
+    {
+      "offset": 96394160,
+      "duration": 4687500,
+      "text": "pressure"
+    },
+    {
+      "offset": 101202080,
+      "duration": 1081660,
+      "text": "on"
+    },
+    {
+      "offset": 102403750,
+      "duration": 721250,
+      "text": "the"
+    },
+    {
+      "offset": 103245000,
+      "duration": 4567500,
+      "text": "caller"
+    },
+    {
+      "offset": 110456660,
+      "duration": 1442500,
+      "text": "with"
+    },
+    {
+      "offset": 112019160,
+      "duration": 480830,
+      "text": "a"
+    },
+    {
+      "offset": 112620000,
+      "duration": 3245000,
+      "text": "clear"
+    },
+    {
+      "offset": 115985410,
+      "duration": 3966250,
+      "text": "path"
+    },
+    {
+      "offset": 120072080,
+      "duration": 1202080,
+      "text": "to"
+    },
+    {
+      "offset": 121394160,
+      "duration": 841250,
+      "text": "the"
+    },
+    {
+      "offset": 122355830,
+      "duration": 3605830,
+      "text": "next"
+    },
+    {
+      "offset": 126081660,
+      "duration": 3605830,
+      "text": "step"
+    }
+  ],
+  "audio": "/Users/toofarbutjustin/Downloads/bolna hack/deliverables/video/v2/voice/09.mp3"
+}

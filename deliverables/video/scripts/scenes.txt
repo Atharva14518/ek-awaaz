@@ -1,0 +1,8 @@
+file '../scenes/00-hook.mp4'
+file '../scenes/01-problem.mp4'
+file '../scenes/02-solution.mp4'
+file '../scenes/03-live-demo.mp4'
+file '../scenes/04-dispatcher.mp4'
+file '../scenes/05-silent-mode.mp4'
+file '../scenes/06-report.mp4'
+file '../scenes/07-close.mp4'

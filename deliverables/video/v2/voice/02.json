@@ -1,0 +1,120 @@
+{
+  "index": 2,
+  "start": 20.7,
+  "end": 30.8,
+  "text": "Here's the actual app. A clear starting point, a live console, and an incident report. Let's walk through a simulated road accident.",
+  "voice": "en-IN-NeerjaExpressiveNeural",
+  "words": [
+    {
+      "offset": 980830,
+      "duration": 3245000,
+      "text": "Here's"
+    },
+    {
+      "offset": 4346250,
+      "duration": 1322080,
+      "text": "the"
+    },
+    {
+      "offset": 5788330,
+      "duration": 4927910,
+      "text": "actual"
+    },
+    {
+      "offset": 10836660,
+      "duration": 2884580,
+      "text": "app"
+    },
+    {
+      "offset": 23197080,
+      "duration": 600830,
+      "text": "A"
+    },
+    {
+      "offset": 23918330,
+      "duration": 3846250,
+      "text": "clear"
+    },
+    {
+      "offset": 27884580,
+      "duration": 4447080,
+      "text": "starting"
+    },
+    {
+      "offset": 32452080,
+      "duration": 4567500,
+      "text": "point"
+    },
+    {
+      "offset": 38822080,
+      "duration": 600830,
+      "text": "a"
+    },
+    {
+      "offset": 39543330,
+      "duration": 3846250,
+      "text": "live"
+    },
+    {
+      "offset": 43509580,
+      "duration": 6130000,
+      "text": "console"
+    },
+    {
+      "offset": 51802910,
+      "duration": 1322080,
+      "text": "and"
+    },
+    {
+      "offset": 53245000,
+      "duration": 961660,
+      "text": "an"
+    },
+    {
+      "offset": 54327080,
+      "duration": 5288330,
+      "text": "incident"
+    },
+    {
+      "offset": 59735410,
+      "duration": 4927910,
+      "text": "report"
+    },
+    {
+      "offset": 73437500,
+      "duration": 3005000,
+      "text": "Let's"
+    },
+    {
+      "offset": 76562500,
+      "duration": 2524160,
+      "text": "walk"
+    },
+    {
+      "offset": 79206660,
+      "duration": 1682500,
+      "text": "through"
+    },
+    {
+      "offset": 81009580,
+      "duration": 600830,
+      "text": "a"
+    },
+    {
+      "offset": 81730830,
+      "duration": 7331660,
+      "text": "simulated"
+    },
+    {
+      "offset": 89182500,
+      "duration": 2884580,
+      "text": "road"
+    },
+    {
+      "offset": 92187500,
+      "duration": 6490410,
+      "text": "accident"
+    }
+  ],
+  "audio": "/Users/toofarbutjustin/Downloads/bolna hack/deliverables/video/v2/voice/02.mp3"
+}

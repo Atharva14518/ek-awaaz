@@ -1,0 +1,180 @@
+{
+  "index": 4,
+  "start": 37.8,
+  "end": 56.7,
+  "text": "The caller speaks naturally, in Hinglish. A bike accident, with two people injured. Their words appear in the live transcript. Key details are highlighted as they arrive. One conversation, turning into a shared picture.",
+  "voice": "en-IN-NeerjaExpressiveNeural",
+  "words": [
+    {
+      "offset": 980830,
+      "duration": 1081660,
+      "text": "The"
+    },
+    {
+      "offset": 2182500,
+      "duration": 3846250,
+      "text": "caller"
+    },
+    {
+      "offset": 6149160,
+      "duration": 4447080,
+      "text": "speaks"
+    },
+    {
+      "offset": 10716250,
+      "duration": 6490410,
+      "text": "naturally"
+    },
+    {
+      "offset": 19130000,
+      "duration": 1802910,
+      "text": "in"
+    },
+    {
+      "offset": 21052910,
+      "duration": 6370000,
+      "text": "Hinglish"
+    },
+    {
+      "offset": 36418330,
+      "duration": 600830,
+      "text": "A"
+    },
+    {
+      "offset": 37139580,
+      "duration": 3245000,
+      "text": "bike"
+    },
+    {
+      "offset": 40505000,
+      "duration": 6490410,
+      "text": "accident"
+    },
+    {
+      "offset": 49038330,
+      "duration": 1442500,
+      "text": "with"
+    },
+    {
+      "offset": 50600830,
+      "duration": 1202080,
+      "text": "two"
+    },
+    {
+      "offset": 51922910,
+      "duration": 4206660,
+      "text": "people"
+    },
+    {
+      "offset": 56250000,
+      "duration": 5168330,
+      "text": "injured"
+    },
+    {
+      "offset": 70192500,
+      "duration": 2043330,
+      "text": "Their"
+    },
+    {
+      "offset": 72355830,
+      "duration": 3005000,
+      "text": "words"
+    },
+    {
+      "offset": 75480830,
+      "duration": 4206660,
+      "text": "appear"
+    },
+    {
+      "offset": 79807500,
+      "duration": 841250,
+      "text": "in"
+    },
+    {
+      "offset": 80769160,
+      "duration": 721250,
+      "text": "the"
+    },
+    {
+      "offset": 81610410,
+      "duration": 3005000,
+      "text": "live"
+    },
+    {
+      "offset": 84735410,
+      "duration": 6971250,
+      "text": "transcript"
+    },
+    {
+      "offset": 100721250,
+      "duration": 1322080,
+      "text": "Key"
+    },
+    {
+      "offset": 102163330,
+      "duration": 4327080,
+      "text": "details"
+    },
+    {
+      "offset": 106610410,
+      "duration": 1202080,
+      "text": "are"
+    },
+    {
+      "offset": 107932500,
+      "duration": 6971250,
+      "text": "highlighted"
+    },
+    {
+      "offset": 115024160,
+      "duration": 1922910,
+      "text": "as"
+    },
+    {
+      "offset": 117067500,
+      "duration": 1081660,
+      "text": "they"
+    },
+    {
+      "offset": 118269160,
+      "duration": 4807500,
+      "text": "arrive"
+    },
+    {
+      "offset": 131850830,
+      "duration": 3005000,
+      "text": "One"
+    },
+    {
+      "offset": 134975830,
+      "duration": 8413330,
+      "text": "conversation"
+    },
+    {
+      "offset": 145552910,
+      "duration": 3605830,
+      "text": "turning"
+    },
+    {
+      "offset": 149278750,
+      "duration": 2524160,
+      "text": "into"
+    },
+    {
+      "offset": 151922910,
+      "duration": 721250,
+      "text": "a"
+    },
+    {
+      "offset": 152764580,
+      "duration": 3725830,
+      "text": "shared"
+    },
+    {
+      "offset": 156610410,
+      "duration": 4927910,
+      "text": "picture"
+    }
+  ],
+  "audio": "/Users/toofarbutjustin/Downloads/bolna hack/deliverables/video/v2/voice/04.mp3"
+}

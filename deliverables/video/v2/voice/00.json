@@ -1,0 +1,115 @@
+{
+  "index": 0,
+  "start": 0.8,
+  "end": 9.8,
+  "text": "In an emergency, one person shouldn't have to make five calls. What if one calm conversation could coordinate the next steps?",
+  "voice": "en-IN-NeerjaExpressiveNeural",
+  "words": [
+    {
+      "offset": 980830,
+      "duration": 1202080,
+      "text": "In"
+    },
+    {
+      "offset": 2302910,
+      "duration": 1081660,
+      "text": "an"
+    },
+    {
+      "offset": 3505000,
+      "duration": 7692500,
+      "text": "emergency"
+    },
+    {
+      "offset": 13961660,
+      "duration": 2524160,
+      "text": "one"
+    },
+    {
+      "offset": 16605830,
+      "duration": 3485410,
+      "text": "person"
+    },
+    {
+      "offset": 20211660,
+      "duration": 3485410,
+      "text": "shouldn't"
+    },
+    {
+      "offset": 23817500,
+      "duration": 1802910,
+      "text": "have"
+    },
+    {
+      "offset": 25740410,
+      "duration": 961660,
+      "text": "to"
+    },
+    {
+      "offset": 26822080,
+      "duration": 1922910,
+      "text": "make"
+    },
+    {
+      "offset": 28865410,
+      "duration": 3365410,
+      "text": "five"
+    },
+    {
+      "offset": 32350830,
+      "duration": 4687500,
+      "text": "calls"
+    },
+    {
+      "offset": 46033750,
+      "duration": 2163330,
+      "text": "What"
+    },
+    {
+      "offset": 48317500,
+      "duration": 1322080,
+      "text": "if"
+    },
+    {
+      "offset": 49759580,
+      "duration": 2403750,
+      "text": "one"
+    },
+    {
+      "offset": 52283750,
+      "duration": 2884580,
+      "text": "calm"
+    },
+    {
+      "offset": 55288330,
+      "duration": 6490410,
+      "text": "conversation"
+    },
+    {
+      "offset": 61899160,
+      "duration": 1562500,
+      "text": "could"
+    },
+    {
+      "offset": 63581660,
+      "duration": 4687500,
+      "text": "coordinate"
+    },
+    {
+      "offset": 68389580,
+      "duration": 961660,
+      "text": "the"
+    },
+    {
+      "offset": 69471250,
+      "duration": 3846250,
+      "text": "next"
+    },
+    {
+      "offset": 73437500,
+      "duration": 5168330,
+      "text": "steps"
+    }
+  ],
+  "audio": "/Users/toofarbutjustin/Downloads/bolna hack/deliverables/video/v2/voice/00.mp3"
+}

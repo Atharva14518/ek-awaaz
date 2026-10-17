@@ -1,0 +1,50 @@
+{
+  "index": 3,
+  "start": 31.4,
+  "end": 36.8,
+  "text": "Listen, understand, confirm, coordinate. Here's how it works.",
+  "voice": "en-IN-NeerjaExpressiveNeural",
+  "words": [
+    {
+      "offset": 980830,
+      "duration": 4807500,
+      "text": "Listen"
+    },
+    {
+      "offset": 7831660,
+      "duration": 6971250,
+      "text": "understand"
+    },
+    {
+      "offset": 16966250,
+      "duration": 6250000,
+      "text": "confirm"
+    },
+    {
+      "offset": 25019160,
+      "duration": 6250000,
+      "text": "coordinate"
+    },
+    {
+      "offset": 40024160,
+      "duration": 3125000,
+      "text": "Here's"
+    },
+    {
+      "offset": 43269160,
+      "duration": 2283750,
+      "text": "how"
+    },
+    {
+      "offset": 45672910,
+      "duration": 1202080,
+      "text": "it"
+    },
+    {
+      "offset": 46995000,
+      "duration": 5047910,
+      "text": "works"
+    }
+  ],
+  "audio": "/Users/toofarbutjustin/Downloads/bolna hack/deliverables/video/v2/voice/03.mp3"
+}

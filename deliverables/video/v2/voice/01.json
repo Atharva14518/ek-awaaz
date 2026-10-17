@@ -1,0 +1,110 @@
+{
+  "index": 1,
+  "start": 10.6,
+  "end": 19.8,
+  "text": "Meet Ek Awaaz. A voice-first assistant with a simple idea: let the caller speak. Let the system handle the coordination.",
+  "voice": "en-IN-NeerjaExpressiveNeural",
+  "words": [
+    {
+      "offset": 980830,
+      "duration": 4687500,
+      "text": "Meet"
+    },
+    {
+      "offset": 5788330,
+      "duration": 2524160,
+      "text": "Ek"
+    },
+    {
+      "offset": 8432500,
+      "duration": 5168330,
+      "text": "Awaaz"
+    },
+    {
+      "offset": 22596250,
+      "duration": 841250,
+      "text": "A"
+    },
+    {
+      "offset": 23557500,
+      "duration": 6250000,
+      "text": "voice-first"
+    },
+    {
+      "offset": 29927910,
+      "duration": 5288330,
+      "text": "assistant"
+    },
+    {
+      "offset": 35336660,
+      "duration": 1322080,
+      "text": "with"
+    },
+    {
+      "offset": 36778750,
+      "duration": 600830,
+      "text": "a"
+    },
+    {
+      "offset": 37500000,
+      "duration": 3966250,
+      "text": "simple"
+    },
+    {
+      "offset": 41586660,
+      "duration": 4687500,
+      "text": "idea"
+    },
+    {
+      "offset": 48557500,
+      "duration": 1802910,
+      "text": "let"
+    },
+    {
+      "offset": 50480830,
+      "duration": 841250,
+      "text": "the"
+    },
+    {
+      "offset": 51442500,
+      "duration": 3245000,
+      "text": "caller"
+    },
+    {
+      "offset": 54807500,
+      "duration": 4447080,
+      "text": "speak"
+    },
+    {
+      "offset": 68028750,
+      "duration": 2043330,
+      "text": "Let"
+    },
+    {
+      "offset": 70192500,
+      "duration": 961660,
+      "text": "the"
+    },
+    {
+      "offset": 71274160,
+      "duration": 4327080,
+      "text": "system"
+    },
+    {
+      "offset": 75721250,
+      "duration": 3846250,
+      "text": "handle"
+    },
+    {
+      "offset": 79687500,
+      "duration": 841250,
+      "text": "the"
+    },
+    {
+      "offset": 80649160,
+      "duration": 9255000,
+      "text": "coordination"
+    }
+  ],
+  "audio": "/Users/toofarbutjustin/Downloads/bolna hack/deliverables/video/v2/voice/01.mp3"
+}

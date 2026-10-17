@@ -1,0 +1,1 @@
+Every action becomes a timestamped incident report. This build stays in demo mode: test numbers only, with no public emergency services contacted.

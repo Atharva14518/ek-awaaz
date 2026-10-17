@@ -1,0 +1,1 @@
+After confirmation, a second agent works in parallel. It prepares tailored calls for the demo ambulance and family, sends a location link, and shows every step on the timeline, while the listener stays with the caller.

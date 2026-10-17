@@ -1,0 +1,211 @@
+1
+00:00:00,898 --> 00:00:03,349
+In an emergency, one person shouldn't have
+
+2
+00:00:03,374 --> 00:00:04,664
+to make five calls.
+
+3
+00:00:05,403 --> 00:00:07,614
+What if one calm conversation could coordinate
+
+4
+00:00:07,639 --> 00:00:08,821
+the next steps?
+
+5
+00:00:10,698 --> 00:00:12,119
+Meet Ek Awaaz.
+
+6
+00:00:12,857 --> 00:00:15,382
+A voice-first assistant with a simple idea:
+
+7
+00:00:15,450 --> 00:00:16,679
+let the caller speak.
+
+8
+00:00:17,395 --> 00:00:19,740
+Let the system handle the coordination.
+
+9
+00:00:20,798 --> 00:00:22,232
+Here's the actual app.
+
+10
+00:00:23,020 --> 00:00:25,824
+A clear starting point, a live console,
+
+11
+00:00:25,880 --> 00:00:27,326
+and an incident report.
+
+12
+00:00:28,044 --> 00:00:30,728
+Let's walk through a simulated road accident.
+
+13
+00:00:31,498 --> 00:00:34,673
+Listen, understand, confirm, coordinate.
+
+14
+00:00:35,384 --> 00:00:36,741
+Here's how it works.
+
+15
+00:00:37,898 --> 00:00:40,702
+The caller speaks naturally, in Hinglish.
+
+16
+00:00:41,442 --> 00:00:44,102
+A bike accident, with two people injured.
+
+17
+00:00:44,819 --> 00:00:47,131
+Their words appear in the live transcript.
+
+18
+00:00:47,872 --> 00:00:50,268
+Key details are highlighted as they arrive.
+
+19
+00:00:50,985 --> 00:00:54,114
+One conversation, turning into a shared picture.
+
+20
+00:00:57,798 --> 00:01:00,550
+Beside the transcript, the incident card takes
+
+21
+00:01:00,574 --> 00:01:05,035
+shape. Location, people, and severity come together.
+
+22
+00:01:05,765 --> 00:01:07,759
+Watch the address update when the caller
+
+23
+00:01:07,784 --> 00:01:08,918
+gives a correction.
+
+24
+00:01:09,587 --> 00:01:11,762
+The latest information matters more than the
+
+25
+00:01:11,787 --> 00:01:12,740
+first guess.
+
+26
+00:01:15,698 --> 00:01:17,812
+The caller confirms the incident type and
+
+27
+00:01:17,837 --> 00:01:20,185
+location before coordination begins.
+
+28
+00:01:20,888 --> 00:01:22,911
+See that checkpoint on the timeline?
+
+29
+00:01:23,569 --> 00:01:25,664
+Understanding comes before action.
+
+30
+00:01:27,597 --> 00:01:29,061
+Now the work splits.
+
+31
+00:01:29,801 --> 00:01:32,001
+The listener supports the conversation.
+
+32
+00:01:32,660 --> 00:01:34,912
+The dispatcher handles the next steps in
+
+33
+00:01:34,937 --> 00:01:35,642
+parallel.
+
+34
+00:01:36,798 --> 00:01:39,465
+In this recorded demo, ambulance and family
+
+35
+00:01:39,490 --> 00:01:42,146
+outreach are simulated, with a location link
+
+36
+00:01:42,171 --> 00:01:43,725
+shown alongside them.
+
+37
+00:01:44,464 --> 00:01:46,759
+Each step has a visible status, so
+
+38
+00:01:46,784 --> 00:01:48,574
+you can follow the handoff instead of
+
+39
+00:01:48,599 --> 00:01:50,910
+wondering what's happening behind the scenes.
+
+40
+00:01:52,698 --> 00:01:55,618
+When speaking freely isn't possible, the interaction
+
+41
+00:01:55,643 --> 00:01:59,726
+changes. Silent mode offers discreet prompts and
+
+42
+00:01:59,751 --> 00:02:01,185
+keypad responses.
+
+43
+00:02:01,903 --> 00:02:03,837
+Less pressure on the caller, with a
+
+44
+00:02:03,862 --> 00:02:05,729
+clear path to the next step.
+
+45
+00:02:07,798 --> 00:02:10,550
+The incident report brings details and timestamped
+
+46
+00:02:10,574 --> 00:02:11,732
+actions together.
+
+47
+00:02:12,424 --> 00:02:14,502
+This is a prototype, not a live
+
+48
+00:02:14,527 --> 00:02:16,045
+emergency response.
+
+49
+00:02:16,787 --> 00:02:19,639
+No public emergency service was contacted.
+
+50
+00:02:20,368 --> 00:02:22,199
+Every step stays visible.
+
+51
+00:02:23,298 --> 00:02:24,444
+Ek Awaaz.
+
+52
+00:02:25,171 --> 00:02:27,134
+One voice, many calls.
+
+53
+00:02:27,863 --> 00:02:29,117
+Built with Bolna.

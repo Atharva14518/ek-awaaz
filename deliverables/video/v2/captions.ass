@@ -1,0 +1,120 @@
+[Script Info]
+ScriptType: v4.00+
+PlayResX: 1920
+PlayResY: 1080
+ScaledBorderAndShadow: yes
+WrapStyle: 2
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: Caption,Poppins Medium,40,&H00FFFFFF,&H00FFFFFF,&H00161B1F,&H00161B1F,0,0,0,0,100,100,0,0,1,0,0,5,0,0,0,1
+Style: Pill,Poppins Medium,28,&H10161B1F,&H10161B1F,&H10161B1F,&H10161B1F,0,0,0,0,100,100,0,0,1,0,0,7,0,0,0,1
+
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 0,0:00:00.90,0:00:03.35,Pill,,0,0,0,,{\an7\pos(625,983)\p1\fad(70,70)}m 13 0 l 656 0 b 669 0 669 0 669 13 l 669 36 b 669 49 669 49 656 49 l 13 49 b 0 49 0 49 0 36 l 0 13 b 0 0 0 0 13 0
+Dialogue: 1,0:00:00.90,0:00:03.35,Caption,,0,0,0,,{\an5\pos(960,1007)\fad(70,70)}In an emergency, one person shouldn't have
+Dialogue: 0,0:00:03.37,0:00:04.66,Pill,,0,0,0,,{\an7\pos(810,983)\p1\fad(70,70)}m 13 0 l 287 0 b 300 0 300 0 300 13 l 300 36 b 300 49 300 49 287 49 l 13 49 b 0 49 0 49 0 36 l 0 13 b 0 0 0 0 13 0
+Dialogue: 1,0:00:03.37,0:00:04.66,Caption,,0,0,0,,{\an5\pos(960,1007)\fad(70,70)}to make five calls.
+Dialogue: 0,0:00:05.40,0:00:07.61,Pill,,0,0,0,,{\an7\pos(595,983)\p1\fad(70,70)}m 13 0 l 717 0 b 730 0 730 0 730 13 l 730 36 b 730 49 730 49 717 49 l 13 49 b 0 49 0 49 0 36 l 0 13 b 0 0 0 0 13 0
+Dialogue: 1,0:00:05.40,0:00:07.61,Caption,,0,0,0,,{\an5\pos(960,1007)\fad(70,70)}What if one calm conversation could coordinate
+Dialogue: 0,0:00:07.64,0:00:08.82,Pill,,0,0,0,,{\an7\pos(830,983)\p1\fad(70,70)}m 13 0 l 247 0 b 260 0 260 0 260 13 l 260 36 b 260 49 260 49 247 49 l 13 49 b 0 49 0 49 0 36 l 0 13 b 0 0 0 0 13 0
+Dialogue: 1,0:00:07.64,0:00:08.82,Caption,,0,0,0,,{\an5\pos(960,1007)\fad(70,70)}the next steps?
+Dialogue: 0,0:00:10.70,0:00:12.12,Pill,,0,0,0,,{\an7\pos(829,983)\p1\fad(70,70)}m 13 0 l 248 0 b 261 0 261 0 261 13 l 261 36 b 261 49 261 49 248 49 l 13 49 b 0 49 0 49 0 36 l 0 13 b 0 0 0 0 13 0
+Dialogue: 1,0:00:10.70,0:00:12.12,Caption,,0,0,0,,{\an5\pos(960,1007)\fad(70,70)}Meet Ek Awaaz.
+Dialogue: 0,0:00:12.86,0:00:15.38,Pill,,0,0,0,,{\an7\pos(644,983)\p1\fad(70,70)}m 13 0 l 618 0 b 631 0 631 0 631 13 l 631 36 b 631 49 631 49 618 49 l 13 49 b 0 49 0 49 0 36 l 0 13 b 0 0 0 0 13 0
+Dialogue: 1,0:00:12.86,0:00:15.38,Caption,,0,0,0,,{\an5\pos(960,1007)\fad(70,70)}A voice-first assistant with a simple idea:
+Dialogue: 0,0:00:15.45,0:00:16.68,Pill,,0,0,0,,{\an7\pos(800,983)\p1\fad(70,70)}m 13 0 l 306 0 b 319 0 319 0 319 13 l 319 36 b 319 49 319 49 306 49 l 13 49 b 0 49 0 49 0 36 l 0 13 b 0 0 0 0 13 0
+Dialogue: 1,0:00:15.45,0:00:16.68,Caption,,0,0,0,,{\an5\pos(960,1007)\fad(70,70)}let the caller speak.
+Dialogue: 0,0:00:17.40,0:00:19.74,Pill,,0,0,0,,{\an7\pos(657,983)\p1\fad(70,70)}m 13 0 l 593 0 b 606 0 606 0 606 13 l 606 36 b 606 49 606 49 593 49 l 13 49 b 0 49 0 49 0 36 l 0 13 b 0 0 0 0 13 0
+Dialogue: 1,0:00:17.40,0:00:19.74,Caption,,0,0,0,,{\an5\pos(960,1007)\fad(70,70)}Let the system handle the coordination.
+Dialogue: 0,0:00:20.80,0:00:22.23,Pill,,0,0,0,,{\an7\pos(783,983)\p1\fad(70,70)}m 13 0 l 340 0 b 353 0 353 0 353 13 l 353 36 b 353 49 353 49 340 49 l 13 49 b 0 49 0 49 0 36 l 0 13 b 0 0 0 0 13 0
+Dialogue: 1,0:00:20.80,0:00:22.23,Caption,,0,0,0,,{\an5\pos(960,1007)\fad(70,70)}Here's the actual app.
+Dialogue: 0,0:00:23.02,0:00:25.82,Pill,,0,0,0,,{\an7\pos(682,983)\p1\fad(70,70)}m 13 0 l 543 0 b 556 0 556 0 556 13 l 556 36 b 556 49 556 49 543 49 l 13 49 b 0 49 0 49 0 36 l 0 13 b 0 0 0 0 13 0
+Dialogue: 1,0:00:23.02,0:00:25.82,Caption,,0,0,0,,{\an5\pos(960,1007)\fad(70,70)}A clear starting point, a live console,
+Dialogue: 0,0:00:25.88,0:00:27.33,Pill,,0,0,0,,{\an7\pos(774,983)\p1\fad(70,70)}m 13 0 l 358 0 b 371 0 371 0 371 13 l 371 36 b 371 49 371 49 358 49 l 13 49 b 0 49 0 49 0 36 l 0 13 b 0 0 0 0 13 0
+Dialogue: 1,0:00:25.88,0:00:27.33,Caption,,0,0,0,,{\an5\pos(960,1007)\fad(70,70)}and an incident report.
+Dialogue: 0,0:00:28.04,0:00:30.73,Pill,,0,0,0,,{\an7\pos(615,983)\p1\fad(70,70)}m 13 0 l 676 0 b 689 0 689 0 689 13 l 689 36 b 689 49 689 49 676 49 l 13 49 b 0 49 0 49 0 36 l 0 13 b 0 0 0 0 13 0
+Dialogue: 1,0:00:28.04,0:00:30.73,Caption,,0,0,0,,{\an5\pos(960,1007)\fad(70,70)}Let's walk through a simulated road accident.
+Dialogue: 0,0:00:31.50,0:00:34.67,Pill,,0,0,0,,{\an7\pos(656,983)\p1\fad(70,70)}m 13 0 l 594 0 b 607 0 607 0 607 13 l 607 36 b 607 49 607 49 594 49 l 13 49 b 0 49 0 49 0 36 l 0 13 b 0 0 0 0 13 0
+Dialogue: 1,0:00:31.50,0:00:34.67,Caption,,0,0,0,,{\an5\pos(960,1007)\fad(70,70)}Listen, understand, confirm, coordinate.
+Dialogue: 0,0:00:35.38,0:00:36.74,Pill,,0,0,0,,{\an7\pos(800,983)\p1\fad(70,70)}m 13 0 l 306 0 b 319 0 319 0 319 13 l 319 36 b 319 49 319 49 306 49 l 13 49 b 0 49 0 49 0 36 l 0 13 b 0 0 0 0 13 0
+Dialogue: 1,0:00:35.38,0:00:36.74,Caption,,0,0,0,,{\an5\pos(960,1007)\fad(70,70)}Here's how it works.
+Dialogue: 0,0:00:37.90,0:00:40.70,Pill,,0,0,0,,{\an7\pos(666,983)\p1\fad(70,70)}m 13 0 l 575 0 b 588 0 588 0 588 13 l 588 36 b 588 49 588 49 575 49 l 13 49 b 0 49 0 49 0 36 l 0 13 b 0 0 0 0 13 0
+Dialogue: 1,0:00:37.90,0:00:40.70,Caption,,0,0,0,,{\an5\pos(960,1007)\fad(70,70)}The caller speaks naturally, in Hinglish.
+Dialogue: 0,0:00:41.44,0:00:44.10,Pill,,0,0,0,,{\an7\pos(652,983)\p1\fad(70,70)}m 13 0 l 602 0 b 615 0 615 0 615 13 l 615 36 b 615 49 615 49 602 49 l 13 49 b 0 49 0 49 0 36 l 0 13 b 0 0 0 0 13 0
+Dialogue: 1,0:00:41.44,0:00:44.10,Caption,,0,0,0,,{\an5\pos(960,1007)\fad(70,70)}A bike accident, with two people injured.
+Dialogue: 0,0:00:44.82,0:00:47.13,Pill,,0,0,0,,{\an7\pos(652,983)\p1\fad(70,70)}m 13 0 l 603 0 b 616 0 616 0 616 13 l 616 36 b 616 49 616 49 603 49 l 13 49 b 0 49 0 49 0 36 l 0 13 b 0 0 0 0 13 0
+Dialogue: 1,0:00:44.82,0:00:47.13,Caption,,0,0,0,,{\an5\pos(960,1007)\fad(70,70)}Their words appear in the live transcript.
+Dialogue: 0,0:00:47.87,0:00:50.27,Pill,,0,0,0,,{\an7\pos(645,983)\p1\fad(70,70)}m 13 0 l 617 0 b 630 0 630 0 630 13 l 630 36 b 630 49 630 49 617 49 l 13 49 b 0 49 0 49 0 36 l 0 13 b 0 0 0 0 13 0
+Dialogue: 1,0:00:47.87,0:00:50.27,Caption,,0,0,0,,{\an5\pos(960,1007)\fad(70,70)}Key details are highlighted as they arrive.
+Dialogue: 0,0:00:50.99,0:00:54.11,Pill,,0,0,0,,{\an7\pos(599,983)\p1\fad(70,70)}m 13 0 l 709 0 b 722 0 722 0 722 13 l 722 36 b 722 49 722 49 709 49 l 13 49 b 0 49 0 49 0 36 l 0 13 b 0 0 0 0 13 0
+Dialogue: 1,0:00:50.99,0:00:54.11,Caption,,0,0,0,,{\an5\pos(960,1007)\fad(70,70)}One conversation, turning into a shared picture.
+Dialogue: 0,0:00:57.80,0:01:00.55,Pill,,0,0,0,,{\an7\pos(619,983)\p1\fad(70,70)}m 13 0 l 668 0 b 681 0 681 0 681 13 l 681 36 b 681 49 681 49 668 49 l 13 49 b 0 49 0 49 0 36 l 0 13 b 0 0 0 0 13 0
+Dialogue: 1,0:00:57.80,0:01:00.55,Caption,,0,0,0,,{\an5\pos(960,1007)\fad(70,70)}Beside the transcript, the incident card takes
+Dialogue: 0,0:01:00.57,0:01:05.04,Pill,,0,0,0,,{\an7\pos(564,983)\p1\fad(70,70)}m 13 0 l 778 0 b 791 0 791 0 791 13 l 791 36 b 791 49 791 49 778 49 l 13 49 b 0 49 0 49 0 36 l 0 13 b 0 0 0 0 13 0
+Dialogue: 1,0:01:00.57,0:01:05.04,Caption,,0,0,0,,{\an5\pos(960,1007)\fad(70,70)}shape. Location, people, and severity come together.
+Dialogue: 0,0:01:05.76,0:01:07.76,Pill,,0,0,0,,{\an7\pos(636,983)\p1\fad(70,70)}m 13 0 l 634 0 b 647 0 647 0 647 13 l 647 36 b 647 49 647 49 634 49 l 13 49 b 0 49 0 49 0 36 l 0 13 b 0 0 0 0 13 0
+Dialogue: 1,0:01:05.76,0:01:07.76,Caption,,0,0,0,,{\an5\pos(960,1007)\fad(70,70)}Watch the address update when the caller
+Dialogue: 0,0:01:07.78,0:01:08.92,Pill,,0,0,0,,{\an7\pos(806,983)\p1\fad(70,70)}m 13 0 l 295 0 b 308 0 308 0 308 13 l 308 36 b 308 49 308 49 295 49 l 13 49 b 0 49 0 49 0 36 l 0 13 b 0 0 0 0 13 0
+Dialogue: 1,0:01:07.78,0:01:08.92,Caption,,0,0,0,,{\an5\pos(960,1007)\fad(70,70)}gives a correction.
+Dialogue: 0,0:01:09.59,0:01:11.76,Pill,,0,0,0,,{\an7\pos(615,983)\p1\fad(70,70)}m 13 0 l 676 0 b 689 0 689 0 689 13 l 689 36 b 689 49 689 49 676 49 l 13 49 b 0 49 0 49 0 36 l 0 13 b 0 0 0 0 13 0
+Dialogue: 1,0:01:09.59,0:01:11.76,Caption,,0,0,0,,{\an5\pos(960,1007)\fad(70,70)}The latest information matters more than the
+Dialogue: 0,0:01:11.79,0:01:12.74,Pill,,0,0,0,,{\an7\pos(860,983)\p1\fad(70,70)}m 13 0 l 187 0 b 200 0 200 0 200 13 l 200 36 b 200 49 200 49 187 49 l 13 49 b 0 49 0 49 0 36 l 0 13 b 0 0 0 0 13 0
+Dialogue: 1,0:01:11.79,0:01:12.74,Caption,,0,0,0,,{\an5\pos(960,1007)\fad(70,70)}first guess.
+Dialogue: 0,0:01:15.70,0:01:17.81,Pill,,0,0,0,,{\an7\pos(647,983)\p1\fad(70,70)}m 13 0 l 613 0 b 626 0 626 0 626 13 l 626 36 b 626 49 626 49 613 49 l 13 49 b 0 49 0 49 0 36 l 0 13 b 0 0 0 0 13 0
+Dialogue: 1,0:01:15.70,0:01:17.81,Caption,,0,0,0,,{\an5\pos(960,1007)\fad(70,70)}The caller confirms the incident type and
+Dialogue: 0,0:01:17.84,0:01:20.18,Pill,,0,0,0,,{\an7\pos(679,983)\p1\fad(70,70)}m 13 0 l 549 0 b 562 0 562 0 562 13 l 562 36 b 562 49 562 49 549 49 l 13 49 b 0 49 0 49 0 36 l 0 13 b 0 0 0 0 13 0
+Dialogue: 1,0:01:17.84,0:01:20.18,Caption,,0,0,0,,{\an5\pos(960,1007)\fad(70,70)}location before coordination begins.
+Dialogue: 0,0:01:20.89,0:01:22.91,Pill,,0,0,0,,{\an7\pos(678,983)\p1\fad(70,70)}m 13 0 l 551 0 b 564 0 564 0 564 13 l 564 36 b 564 49 564 49 551 49 l 13 49 b 0 49 0 49 0 36 l 0 13 b 0 0 0 0 13 0
+Dialogue: 1,0:01:20.89,0:01:22.91,Caption,,0,0,0,,{\an5\pos(960,1007)\fad(70,70)}See that checkpoint on the timeline?
+Dialogue: 0,0:01:23.57,0:01:25.66,Pill,,0,0,0,,{\an7\pos(677,983)\p1\fad(70,70)}m 13 0 l 552 0 b 565 0 565 0 565 13 l 565 36 b 565 49 565 49 552 49 l 13 49 b 0 49 0 49 0 36 l 0 13 b 0 0 0 0 13 0
+Dialogue: 1,0:01:23.57,0:01:25.66,Caption,,0,0,0,,{\an5\pos(960,1007)\fad(70,70)}Understanding comes before action.
+Dialogue: 0,0:01:27.60,0:01:29.06,Pill,,0,0,0,,{\an7\pos(798,983)\p1\fad(70,70)}m 13 0 l 311 0 b 324 0 324 0 324 13 l 324 36 b 324 49 324 49 311 49 l 13 49 b 0 49 0 49 0 36 l 0 13 b 0 0 0 0 13 0
+Dialogue: 1,0:01:27.60,0:01:29.06,Caption,,0,0,0,,{\an5\pos(960,1007)\fad(70,70)}Now the work splits.
+Dialogue: 0,0:01:29.80,0:01:32.00,Pill,,0,0,0,,{\an7\pos(662,983)\p1\fad(70,70)}m 13 0 l 582 0 b 595 0 595 0 595 13 l 595 36 b 595 49 595 49 582 49 l 13 49 b 0 49 0 49 0 36 l 0 13 b 0 0 0 0 13 0
+Dialogue: 1,0:01:29.80,0:01:32.00,Caption,,0,0,0,,{\an5\pos(960,1007)\fad(70,70)}The listener supports the conversation.
+Dialogue: 0,0:01:32.66,0:01:34.91,Pill,,0,0,0,,{\an7\pos(651,983)\p1\fad(70,70)}m 13 0 l 604 0 b 617 0 617 0 617 13 l 617 36 b 617 49 617 49 604 49 l 13 49 b 0 49 0 49 0 36 l 0 13 b 0 0 0 0 13 0
+Dialogue: 1,0:01:32.66,0:01:34.91,Caption,,0,0,0,,{\an5\pos(960,1007)\fad(70,70)}The dispatcher handles the next steps in
+Dialogue: 0,0:01:34.94,0:01:35.64,Pill,,0,0,0,,{\an7\pos(880,983)\p1\fad(70,70)}m 13 0 l 147 0 b 160 0 160 0 160 13 l 160 36 b 160 49 160 49 147 49 l 13 49 b 0 49 0 49 0 36 l 0 13 b 0 0 0 0 13 0
+Dialogue: 1,0:01:34.94,0:01:35.64,Caption,,0,0,0,,{\an5\pos(960,1007)\fad(70,70)}parallel.
+Dialogue: 0,0:01:36.80,0:01:39.47,Pill,,0,0,0,,{\an7\pos(613,983)\p1\fad(70,70)}m 13 0 l 680 0 b 693 0 693 0 693 13 l 693 36 b 693 49 693 49 680 49 l 13 49 b 0 49 0 49 0 36 l 0 13 b 0 0 0 0 13 0
+Dialogue: 1,0:01:36.80,0:01:39.47,Caption,,0,0,0,,{\an5\pos(960,1007)\fad(70,70)}In this recorded demo, ambulance and family
+Dialogue: 0,0:01:39.49,0:01:42.15,Pill,,0,0,0,,{\an7\pos(631,983)\p1\fad(70,70)}m 13 0 l 645 0 b 658 0 658 0 658 13 l 658 36 b 658 49 658 49 645 49 l 13 49 b 0 49 0 49 0 36 l 0 13 b 0 0 0 0 13 0
+Dialogue: 1,0:01:39.49,0:01:42.15,Caption,,0,0,0,,{\an5\pos(960,1007)\fad(70,70)}outreach are simulated, with a location link
+Dialogue: 0,0:01:42.17,0:01:43.72,Pill,,0,0,0,,{\an7\pos(772,983)\p1\fad(70,70)}m 13 0 l 362 0 b 375 0 375 0 375 13 l 375 36 b 375 49 375 49 362 49 l 13 49 b 0 49 0 49 0 36 l 0 13 b 0 0 0 0 13 0
+Dialogue: 1,0:01:42.17,0:01:43.72,Caption,,0,0,0,,{\an5\pos(960,1007)\fad(70,70)}shown alongside them.
+Dialogue: 0,0:01:44.46,0:01:46.76,Pill,,0,0,0,,{\an7\pos(705,983)\p1\fad(70,70)}m 13 0 l 497 0 b 510 0 510 0 510 13 l 510 36 b 510 49 510 49 497 49 l 13 49 b 0 49 0 49 0 36 l 0 13 b 0 0 0 0 13 0
+Dialogue: 1,0:01:44.46,0:01:46.76,Caption,,0,0,0,,{\an5\pos(960,1007)\fad(70,70)}Each step has a visible status, so
+Dialogue: 0,0:01:46.78,0:01:48.57,Pill,,0,0,0,,{\an7\pos(674,983)\p1\fad(70,70)}m 13 0 l 559 0 b 572 0 572 0 572 13 l 572 36 b 572 49 572 49 559 49 l 13 49 b 0 49 0 49 0 36 l 0 13 b 0 0 0 0 13 0
+Dialogue: 1,0:01:46.78,0:01:48.57,Caption,,0,0,0,,{\an5\pos(960,1007)\fad(70,70)}you can follow the handoff instead of
+Dialogue: 0,0:01:48.60,0:01:50.91,Pill,,0,0,0,,{\an7\pos(595,983)\p1\fad(70,70)}m 13 0 l 717 0 b 730 0 730 0 730 13 l 730 36 b 730 49 730 49 717 49 l 13 49 b 0 49 0 49 0 36 l 0 13 b 0 0 0 0 13 0
+Dialogue: 1,0:01:48.60,0:01:50.91,Caption,,0,0,0,,{\an5\pos(960,1007)\fad(70,70)}wondering what's happening behind the scenes.
+Dialogue: 0,0:01:52.70,0:01:55.62,Pill,,0,0,0,,{\an7\pos(579,983)\p1\fad(70,70)}m 13 0 l 749 0 b 762 0 762 0 762 13 l 762 36 b 762 49 762 49 749 49 l 13 49 b 0 49 0 49 0 36 l 0 13 b 0 0 0 0 13 0
+Dialogue: 1,0:01:52.70,0:01:55.62,Caption,,0,0,0,,{\an5\pos(960,1007)\fad(70,70)}When speaking freely isn't possible, the interaction
+Dialogue: 0,0:01:55.64,0:01:59.73,Pill,,0,0,0,,{\an7\pos(582,983)\p1\fad(70,70)}m 13 0 l 742 0 b 755 0 755 0 755 13 l 755 36 b 755 49 755 49 742 49 l 13 49 b 0 49 0 49 0 36 l 0 13 b 0 0 0 0 13 0
+Dialogue: 1,0:01:55.64,0:01:59.73,Caption,,0,0,0,,{\an5\pos(960,1007)\fad(70,70)}changes. Silent mode offers discreet prompts and
+Dialogue: 0,0:01:59.75,0:02:01.19,Pill,,0,0,0,,{\an7\pos(804,983)\p1\fad(70,70)}m 13 0 l 298 0 b 311 0 311 0 311 13 l 311 36 b 311 49 311 49 298 49 l 13 49 b 0 49 0 49 0 36 l 0 13 b 0 0 0 0 13 0
+Dialogue: 1,0:01:59.75,0:02:01.19,Caption,,0,0,0,,{\an5\pos(960,1007)\fad(70,70)}keypad responses.
+Dialogue: 0,0:02:01.90,0:02:03.84,Pill,,0,0,0,,{\an7\pos(701,983)\p1\fad(70,70)}m 13 0 l 505 0 b 518 0 518 0 518 13 l 518 36 b 518 49 518 49 505 49 l 13 49 b 0 49 0 49 0 36 l 0 13 b 0 0 0 0 13 0
+Dialogue: 1,0:02:01.90,0:02:03.84,Caption,,0,0,0,,{\an5\pos(960,1007)\fad(70,70)}Less pressure on the caller, with a
+Dialogue: 0,0:02:03.86,0:02:05.73,Pill,,0,0,0,,{\an7\pos(748,983)\p1\fad(70,70)}m 13 0 l 411 0 b 424 0 424 0 424 13 l 424 36 b 424 49 424 49 411 49 l 13 49 b 0 49 0 49 0 36 l 0 13 b 0 0 0 0 13 0
+Dialogue: 1,0:02:03.86,0:02:05.73,Caption,,0,0,0,,{\an5\pos(960,1007)\fad(70,70)}clear path to the next step.
+Dialogue: 0,0:02:07.80,0:02:10.55,Pill,,0,0,0,,{\an7\pos(570,983)\p1\fad(70,70)}m 13 0 l 767 0 b 780 0 780 0 780 13 l 780 36 b 780 49 780 49 767 49 l 13 49 b 0 49 0 49 0 36 l 0 13 b 0 0 0 0 13 0
+Dialogue: 1,0:02:07.80,0:02:10.55,Caption,,0,0,0,,{\an5\pos(960,1007)\fad(70,70)}The incident report brings details and timestamped
+Dialogue: 0,0:02:10.57,0:02:11.73,Pill,,0,0,0,,{\an7\pos(815,983)\p1\fad(70,70)}m 13 0 l 276 0 b 289 0 289 0 289 13 l 289 36 b 289 49 289 49 276 49 l 13 49 b 0 49 0 49 0 36 l 0 13 b 0 0 0 0 13 0
+Dialogue: 1,0:02:10.57,0:02:11.73,Caption,,0,0,0,,{\an5\pos(960,1007)\fad(70,70)}actions together.
+Dialogue: 0,0:02:12.42,0:02:14.50,Pill,,0,0,0,,{\an7\pos(735,983)\p1\fad(70,70)}m 13 0 l 436 0 b 449 0 449 0 449 13 l 449 36 b 449 49 449 49 436 49 l 13 49 b 0 49 0 49 0 36 l 0 13 b 0 0 0 0 13 0
+Dialogue: 1,0:02:12.42,0:02:14.50,Caption,,0,0,0,,{\an5\pos(960,1007)\fad(70,70)}This is a prototype, not a live
+Dialogue: 0,0:02:14.53,0:02:16.05,Pill,,0,0,0,,{\an7\pos(784,983)\p1\fad(70,70)}m 13 0 l 339 0 b 352 0 352 0 352 13 l 352 36 b 352 49 352 49 339 49 l 13 49 b 0 49 0 49 0 36 l 0 13 b 0 0 0 0 13 0
+Dialogue: 1,0:02:14.53,0:02:16.05,Caption,,0,0,0,,{\an5\pos(960,1007)\fad(70,70)}emergency response.
+Dialogue: 0,0:02:16.79,0:02:19.64,Pill,,0,0,0,,{\an7\pos(619,983)\p1\fad(70,70)}m 13 0 l 668 0 b 681 0 681 0 681 13 l 681 36 b 681 49 681 49 668 49 l 13 49 b 0 49 0 49 0 36 l 0 13 b 0 0 0 0 13 0
+Dialogue: 1,0:02:16.79,0:02:19.64,Caption,,0,0,0,,{\an5\pos(960,1007)\fad(70,70)}No public emergency service was contacted.
+Dialogue: 0,0:02:20.37,0:02:22.20,Pill,,0,0,0,,{\an7\pos(771,983)\p1\fad(70,70)}m 13 0 l 365 0 b 378 0 378 0 378 13 l 378 36 b 378 49 378 49 365 49 l 13 49 b 0 49 0 49 0 36 l 0 13 b 0 0 0 0 13 0
+Dialogue: 1,0:02:20.37,0:02:22.20,Caption,,0,0,0,,{\an5\pos(960,1007)\fad(70,70)}Every step stays visible.
+Dialogue: 0,0:02:23.30,0:02:24.44,Pill,,0,0,0,,{\an7\pos(867,983)\p1\fad(70,70)}m 13 0 l 172 0 b 185 0 185 0 185 13 l 185 36 b 185 49 185 49 172 49 l 13 49 b 0 49 0 49 0 36 l 0 13 b 0 0 0 0 13 0
+Dialogue: 1,0:02:23.30,0:02:24.44,Caption,,0,0,0,,{\an5\pos(960,1007)\fad(70,70)}Ek Awaaz.
+Dialogue: 0,0:02:25.17,0:02:27.13,Pill,,0,0,0,,{\an7\pos(779,983)\p1\fad(70,70)}m 13 0 l 348 0 b 361 0 361 0 361 13 l 361 36 b 361 49 361 49 348 49 l 13 49 b 0 49 0 49 0 36 l 0 13 b 0 0 0 0 13 0
+Dialogue: 1,0:02:25.17,0:02:27.13,Caption,,0,0,0,,{\an5\pos(960,1007)\fad(70,70)}One voice, many calls.
+Dialogue: 0,0:02:27.86,0:02:29.12,Pill,,0,0,0,,{\an7\pos(825,983)\p1\fad(70,70)}m 13 0 l 257 0 b 270 0 270 0 270 13 l 270 36 b 270 49 270 49 257 49 l 13 49 b 0 49 0 49 0 36 l 0 13 b 0 0 0 0 13 0
+Dialogue: 1,0:02:27.86,0:02:29.12,Caption,,0,0,0,,{\an5\pos(960,1007)\fad(70,70)}Built with Bolna.

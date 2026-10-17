@@ -1,0 +1,1517 @@
+[
+  {
+    "index": 0,
+    "start": 0.8,
+    "end": 9.8,
+    "text": "In an emergency, one person shouldn't have to make five calls. What if one calm conversation could coordinate the next steps?",
+    "voice": "en-IN-NeerjaExpressiveNeural",
+    "words": [
+      {
+        "offset": 980830,
+        "duration": 1202080,
+        "text": "In"
+      },
+      {
+        "offset": 2302910,
+        "duration": 1081660,
+        "text": "an"
+      },
+      {
+        "offset": 3505000,
+        "duration": 7692500,
+        "text": "emergency"
+      },
+      {
+        "offset": 13961660,
+        "duration": 2524160,
+        "text": "one"
+      },
+      {
+        "offset": 16605830,
+        "duration": 3485410,
+        "text": "person"
+      },
+      {
+        "offset": 20211660,
+        "duration": 3485410,
+        "text": "shouldn't"
+      },
+      {
+        "offset": 23817500,
+        "duration": 1802910,
+        "text": "have"
+      },
+      {
+        "offset": 25740410,
+        "duration": 961660,
+        "text": "to"
+      },
+      {
+        "offset": 26822080,
+        "duration": 1922910,
+        "text": "make"
+      },
+      {
+        "offset": 28865410,
+        "duration": 3365410,
+        "text": "five"
+      },
+      {
+        "offset": 32350830,
+        "duration": 4687500,
+        "text": "calls"
+      },
+      {
+        "offset": 46033750,
+        "duration": 2163330,
+        "text": "What"
+      },
+      {
+        "offset": 48317500,
+        "duration": 1322080,
+        "text": "if"
+      },
+      {
+        "offset": 49759580,
+        "duration": 2403750,
+        "text": "one"
+      },
+      {
+        "offset": 52283750,
+        "duration": 2884580,
+        "text": "calm"
+      },
+      {
+        "offset": 55288330,
+        "duration": 6490410,
+        "text": "conversation"
+      },
+      {
+        "offset": 61899160,
+        "duration": 1562500,
+        "text": "could"
+      },
+      {
+        "offset": 63581660,
+        "duration": 4687500,
+        "text": "coordinate"
+      },
+      {
+        "offset": 68389580,
+        "duration": 961660,
+        "text": "the"
+      },
+      {
+        "offset": 69471250,
+        "duration": 3846250,
+        "text": "next"
+      },
+      {
+        "offset": 73437500,
+        "duration": 5168330,
+        "text": "steps"
+      }
+    ],
+    "audio": "/Users/toofarbutjustin/Downloads/bolna hack/deliverables/video/v2/voice/00.mp3"
+  },
+  {
+    "index": 1,
+    "start": 10.6,
+    "end": 19.8,
+    "text": "Meet Ek Awaaz. A voice-first assistant with a simple idea: let the caller speak. Let the system handle the coordination.",
+    "voice": "en-IN-NeerjaExpressiveNeural",
+    "words": [
+      {
+        "offset": 980830,
+        "duration": 4687500,
+        "text": "Meet"
+      },
+      {
+        "offset": 5788330,
+        "duration": 2524160,
+        "text": "Ek"
+      },
+      {
+        "offset": 8432500,
+        "duration": 5168330,
+        "text": "Awaaz"
+      },
+      {
+        "offset": 22596250,
+        "duration": 841250,
+        "text": "A"
+      },
+      {
+        "offset": 23557500,
+        "duration": 6250000,
+        "text": "voice-first"
+      },
+      {
+        "offset": 29927910,
+        "duration": 5288330,
+        "text": "assistant"
+      },
+      {
+        "offset": 35336660,
+        "duration": 1322080,
+        "text": "with"
+      },
+      {
+        "offset": 36778750,
+        "duration": 600830,
+        "text": "a"
+      },
+      {
+        "offset": 37500000,
+        "duration": 3966250,
+        "text": "simple"
+      },
+      {
+        "offset": 41586660,
+        "duration": 4687500,
+        "text": "idea"
+      },
+      {
+        "offset": 48557500,
+        "duration": 1802910,
+        "text": "let"
+      },
+      {
+        "offset": 50480830,
+        "duration": 841250,
+        "text": "the"
+      },
+      {
+        "offset": 51442500,
+        "duration": 3245000,
+        "text": "caller"
+      },
+      {
+        "offset": 54807500,
+        "duration": 4447080,
+        "text": "speak"
+      },
+      {
+        "offset": 68028750,
+        "duration": 2043330,
+        "text": "Let"
+      },
+      {
+        "offset": 70192500,
+        "duration": 961660,
+        "text": "the"
+      },
+      {
+        "offset": 71274160,
+        "duration": 4327080,
+        "text": "system"
+      },
+      {
+        "offset": 75721250,
+        "duration": 3846250,
+        "text": "handle"
+      },
+      {
+        "offset": 79687500,
+        "duration": 841250,
+        "text": "the"
+      },
+      {
+        "offset": 80649160,
+        "duration": 9255000,
+        "text": "coordination"
+      }
+    ],
+    "audio": "/Users/toofarbutjustin/Downloads/bolna hack/deliverables/video/v2/voice/01.mp3"
+  },
+  {
+    "index": 2,
+    "start": 20.7,
+    "end": 30.8,
+    "text": "Here's the actual app. A clear starting point, a live console, and an incident report. Let's walk through a simulated road accident.",
+    "voice": "en-IN-NeerjaExpressiveNeural",
+    "words": [
+      {
+        "offset": 980830,
+        "duration": 3245000,
+        "text": "Here's"
+      },
+      {
+        "offset": 4346250,
+        "duration": 1322080,
+        "text": "the"
+      },
+      {
+        "offset": 5788330,
+        "duration": 4927910,
+        "text": "actual"
+      },
+      {
+        "offset": 10836660,
+        "duration": 2884580,
+        "text": "app"
+      },
+      {
+        "offset": 23197080,
+        "duration": 600830,
+        "text": "A"
+      },
+      {
+        "offset": 23918330,
+        "duration": 3846250,
+        "text": "clear"
+      },
+      {
+        "offset": 27884580,
+        "duration": 4447080,
+        "text": "starting"
+      },
+      {
+        "offset": 32452080,
+        "duration": 4567500,
+        "text": "point"
+      },
+      {
+        "offset": 38822080,
+        "duration": 600830,
+        "text": "a"
+      },
+      {
+        "offset": 39543330,
+        "duration": 3846250,
+        "text": "live"
+      },
+      {
+        "offset": 43509580,
+        "duration": 6130000,
+        "text": "console"
+      },
+      {
+        "offset": 51802910,
+        "duration": 1322080,
+        "text": "and"
+      },
+      {
+        "offset": 53245000,
+        "duration": 961660,
+        "text": "an"
+      },
+      {
+        "offset": 54327080,
+        "duration": 5288330,
+        "text": "incident"
+      },
+      {
+        "offset": 59735410,
+        "duration": 4927910,
+        "text": "report"
+      },
+      {
+        "offset": 73437500,
+        "duration": 3005000,
+        "text": "Let's"
+      },
+      {
+        "offset": 76562500,
+        "duration": 2524160,
+        "text": "walk"
+      },
+      {
+        "offset": 79206660,
+        "duration": 1682500,
+        "text": "through"
+      },
+      {
+        "offset": 81009580,
+        "duration": 600830,
+        "text": "a"
+      },
+      {
+        "offset": 81730830,
+        "duration": 7331660,
+        "text": "simulated"
+      },
+      {
+        "offset": 89182500,
+        "duration": 2884580,
+        "text": "road"
+      },
+      {
+        "offset": 92187500,
+        "duration": 6490410,
+        "text": "accident"
+      }
+    ],
+    "audio": "/Users/toofarbutjustin/Downloads/bolna hack/deliverables/video/v2/voice/02.mp3"
+  },
+  {
+    "index": 3,
+    "start": 31.4,
+    "end": 36.8,
+    "text": "Listen, understand, confirm, coordinate. Here's how it works.",
+    "voice": "en-IN-NeerjaExpressiveNeural",
+    "words": [
+      {
+        "offset": 980830,
+        "duration": 4807500,
+        "text": "Listen"
+      },
+      {
+        "offset": 7831660,
+        "duration": 6971250,
+        "text": "understand"
+      },
+      {
+        "offset": 16966250,
+        "duration": 6250000,
+        "text": "confirm"
+      },
+      {
+        "offset": 25019160,
+        "duration": 6250000,
+        "text": "coordinate"
+      },
+      {
+        "offset": 40024160,
+        "duration": 3125000,
+        "text": "Here's"
+      },
+      {
+        "offset": 43269160,
+        "duration": 2283750,
+        "text": "how"
+      },
+      {
+        "offset": 45672910,
+        "duration": 1202080,
+        "text": "it"
+      },
+      {
+        "offset": 46995000,
+        "duration": 5047910,
+        "text": "works"
+      }
+    ],
+    "audio": "/Users/toofarbutjustin/Downloads/bolna hack/deliverables/video/v2/voice/03.mp3"
+  },
+  {
+    "index": 4,
+    "start": 37.8,
+    "end": 56.7,
+    "text": "The caller speaks naturally, in Hinglish. A bike accident, with two people injured. Their words appear in the live transcript. Key details are highlighted as they arrive. One conversation, turning into a shared picture.",
+    "voice": "en-IN-NeerjaExpressiveNeural",
+    "words": [
+      {
+        "offset": 980830,
+        "duration": 1081660,
+        "text": "The"
+      },
+      {
+        "offset": 2182500,
+        "duration": 3846250,
+        "text": "caller"
+      },
+      {
+        "offset": 6149160,
+        "duration": 4447080,
+        "text": "speaks"
+      },
+      {
+        "offset": 10716250,
+        "duration": 6490410,
+        "text": "naturally"
+      },
+      {
+        "offset": 19130000,
+        "duration": 1802910,
+        "text": "in"
+      },
+      {
+        "offset": 21052910,
+        "duration": 6370000,
+        "text": "Hinglish"
+      },
+      {
+        "offset": 36418330,
+        "duration": 600830,
+        "text": "A"
+      },
+      {
+        "offset": 37139580,
+        "duration": 3245000,
+        "text": "bike"
+      },
+      {
+        "offset": 40505000,
+        "duration": 6490410,
+        "text": "accident"
+      },
+      {
+        "offset": 49038330,
+        "duration": 1442500,
+        "text": "with"
+      },
+      {
+        "offset": 50600830,
+        "duration": 1202080,
+        "text": "two"
+      },
+      {
+        "offset": 51922910,
+        "duration": 4206660,
+        "text": "people"
+      },
+      {
+        "offset": 56250000,
+        "duration": 5168330,
+        "text": "injured"
+      },
+      {
+        "offset": 70192500,
+        "duration": 2043330,
+        "text": "Their"
+      },
+      {
+        "offset": 72355830,
+        "duration": 3005000,
+        "text": "words"
+      },
+      {
+        "offset": 75480830,
+        "duration": 4206660,
+        "text": "appear"
+      },
+      {
+        "offset": 79807500,
+        "duration": 841250,
+        "text": "in"
+      },
+      {
+        "offset": 80769160,
+        "duration": 721250,
+        "text": "the"
+      },
+      {
+        "offset": 81610410,
+        "duration": 3005000,
+        "text": "live"
+      },
+      {
+        "offset": 84735410,
+        "duration": 6971250,
+        "text": "transcript"
+      },
+      {
+        "offset": 100721250,
+        "duration": 1322080,
+        "text": "Key"
+      },
+      {
+        "offset": 102163330,
+        "duration": 4327080,
+        "text": "details"
+      },
+      {
+        "offset": 106610410,
+        "duration": 1202080,
+        "text": "are"
+      },
+      {
+        "offset": 107932500,
+        "duration": 6971250,
+        "text": "highlighted"
+      },
+      {
+        "offset": 115024160,
+        "duration": 1922910,
+        "text": "as"
+      },
+      {
+        "offset": 117067500,
+        "duration": 1081660,
+        "text": "they"
+      },
+      {
+        "offset": 118269160,
+        "duration": 4807500,
+        "text": "arrive"
+      },
+      {
+        "offset": 131850830,
+        "duration": 3005000,
+        "text": "One"
+      },
+      {
+        "offset": 134975830,
+        "duration": 8413330,
+        "text": "conversation"
+      },
+      {
+        "offset": 145552910,
+        "duration": 3605830,
+        "text": "turning"
+      },
+      {
+        "offset": 149278750,
+        "duration": 2524160,
+        "text": "into"
+      },
+      {
+        "offset": 151922910,
+        "duration": 721250,
+        "text": "a"
+      },
+      {
+        "offset": 152764580,
+        "duration": 3725830,
+        "text": "shared"
+      },
+      {
+        "offset": 156610410,
+        "duration": 4927910,
+        "text": "picture"
+      }
+    ],
+    "audio": "/Users/toofarbutjustin/Downloads/bolna hack/deliverables/video/v2/voice/04.mp3"
+  },
+  {
+    "index": 5,
+    "start": 57.7,
+    "end": 74.7,
+    "text": "Beside the transcript, the incident card takes shape. Location, people, and severity come together. Watch the address update when the caller gives a correction. The latest information matters more than the first guess.",
+    "voice": "en-IN-NeerjaExpressiveNeural",
+    "words": [
+      {
+        "offset": 980830,
+        "duration": 4567500,
+        "text": "Beside"
+      },
+      {
+        "offset": 5668330,
+        "duration": 841250,
+        "text": "the"
+      },
+      {
+        "offset": 6630000,
+        "duration": 7452080,
+        "text": "transcript"
+      },
+      {
+        "offset": 16125000,
+        "duration": 1322080,
+        "text": "the"
+      },
+      {
+        "offset": 17567500,
+        "duration": 4567500,
+        "text": "incident"
+      },
+      {
+        "offset": 22255000,
+        "duration": 3365410,
+        "text": "card"
+      },
+      {
+        "offset": 25740410,
+        "duration": 2884580,
+        "text": "takes"
+      },
+      {
+        "offset": 28745000,
+        "duration": 3485410,
+        "text": "shape"
+      },
+      {
+        "offset": 41225830,
+        "duration": 7211660,
+        "text": "Location"
+      },
+      {
+        "offset": 49399160,
+        "duration": 4807500,
+        "text": "people"
+      },
+      {
+        "offset": 56009580,
+        "duration": 1802910,
+        "text": "and"
+      },
+      {
+        "offset": 57932500,
+        "duration": 5408750,
+        "text": "severity"
+      },
+      {
+        "offset": 63461660,
+        "duration": 2524160,
+        "text": "come"
+      },
+      {
+        "offset": 66105830,
+        "duration": 5649160,
+        "text": "together"
+      },
+      {
+        "offset": 80649160,
+        "duration": 3245000,
+        "text": "Watch"
+      },
+      {
+        "offset": 84014580,
+        "duration": 1442500,
+        "text": "the"
+      },
+      {
+        "offset": 85577080,
+        "duration": 4206660,
+        "text": "address"
+      },
+      {
+        "offset": 89903750,
+        "duration": 4687500,
+        "text": "update"
+      },
+      {
+        "offset": 94711660,
+        "duration": 1562500,
+        "text": "when"
+      },
+      {
+        "offset": 96394160,
+        "duration": 721250,
+        "text": "the"
+      },
+      {
+        "offset": 97235410,
+        "duration": 3485410,
+        "text": "caller"
+      },
+      {
+        "offset": 100841250,
+        "duration": 2764580,
+        "text": "gives"
+      },
+      {
+        "offset": 103725830,
+        "duration": 480830,
+        "text": "a"
+      },
+      {
+        "offset": 104327080,
+        "duration": 6250000,
+        "text": "correction"
+      },
+      {
+        "offset": 118870000,
+        "duration": 961660,
+        "text": "The"
+      },
+      {
+        "offset": 119952080,
+        "duration": 4687500,
+        "text": "latest"
+      },
+      {
+        "offset": 124759580,
+        "duration": 5769160,
+        "text": "information"
+      },
+      {
+        "offset": 130649160,
+        "duration": 5047910,
+        "text": "matters"
+      },
+      {
+        "offset": 135817500,
+        "duration": 2283750,
+        "text": "more"
+      },
+      {
+        "offset": 138221250,
+        "duration": 1802910,
+        "text": "than"
+      },
+      {
+        "offset": 140144160,
+        "duration": 600830,
+        "text": "the"
+      },
+      {
+        "offset": 140865410,
+        "duration": 3846250,
+        "text": "first"
+      },
+      {
+        "offset": 144831660,
+        "duration": 3966250,
+        "text": "guess"
+      }
+    ],
+    "audio": "/Users/toofarbutjustin/Downloads/bolna hack/deliverables/video/v2/voice/05.mp3"
+  },
+  {
+    "index": 6,
+    "start": 75.6,
+    "end": 86.7,
+    "text": "The caller confirms the incident type and location before coordination begins. See that checkpoint on the timeline? Understanding comes before action.",
+    "voice": "en-IN-NeerjaExpressiveNeural",
+    "words": [
+      {
+        "offset": 980830,
+        "duration": 1081660,
+        "text": "The"
+      },
+      {
+        "offset": 2182500,
+        "duration": 3365410,
+        "text": "caller"
+      },
+      {
+        "offset": 5668330,
+        "duration": 5528750,
+        "text": "confirms"
+      },
+      {
+        "offset": 11317500,
+        "duration": 1442500,
+        "text": "the"
+      },
+      {
+        "offset": 12880000,
+        "duration": 4567500,
+        "text": "incident"
+      },
+      {
+        "offset": 17567500,
+        "duration": 3245000,
+        "text": "type"
+      },
+      {
+        "offset": 20932500,
+        "duration": 1322080,
+        "text": "and"
+      },
+      {
+        "offset": 22375000,
+        "duration": 5528750,
+        "text": "location"
+      },
+      {
+        "offset": 28024160,
+        "duration": 3365410,
+        "text": "before"
+      },
+      {
+        "offset": 31509580,
+        "duration": 7452080,
+        "text": "coordination"
+      },
+      {
+        "offset": 39081660,
+        "duration": 5168330,
+        "text": "begins"
+      },
+      {
+        "offset": 52884580,
+        "duration": 2644160,
+        "text": "See"
+      },
+      {
+        "offset": 55649160,
+        "duration": 1922910,
+        "text": "that"
+      },
+      {
+        "offset": 57692500,
+        "duration": 5408750,
+        "text": "checkpoint"
+      },
+      {
+        "offset": 63221250,
+        "duration": 1081660,
+        "text": "on"
+      },
+      {
+        "offset": 64422910,
+        "duration": 721250,
+        "text": "the"
+      },
+      {
+        "offset": 65264580,
+        "duration": 6250000,
+        "text": "timeline"
+      },
+      {
+        "offset": 79687500,
+        "duration": 6850830,
+        "text": "Understanding"
+      },
+      {
+        "offset": 86658750,
+        "duration": 3005000,
+        "text": "comes"
+      },
+      {
+        "offset": 89783750,
+        "duration": 4327080,
+        "text": "before"
+      },
+      {
+        "offset": 94230830,
+        "duration": 4807500,
+        "text": "action"
+      }
+    ],
+    "audio": "/Users/toofarbutjustin/Downloads/bolna hack/deliverables/video/v2/voice/06.mp3"
+  },
+  {
+    "index": 7,
+    "start": 87.5,
+    "end": 95.7,
+    "text": "Now the work splits. The listener supports the conversation. The dispatcher handles the next steps in parallel.",
+    "voice": "en-IN-NeerjaExpressiveNeural",
+    "words": [
+      {
+        "offset": 980830,
+        "duration": 2884580,
+        "text": "Now"
+      },
+      {
+        "offset": 3985410,
+        "duration": 1202080,
+        "text": "the"
+      },
+      {
+        "offset": 5307500,
+        "duration": 3005000,
+        "text": "work"
+      },
+      {
+        "offset": 8432500,
+        "duration": 5769160,
+        "text": "splits"
+      },
+      {
+        "offset": 23317500,
+        "duration": 1081660,
+        "text": "The"
+      },
+      {
+        "offset": 24519160,
+        "duration": 4687500,
+        "text": "listener"
+      },
+      {
+        "offset": 29327080,
+        "duration": 5288330,
+        "text": "supports"
+      },
+      {
+        "offset": 34735410,
+        "duration": 841250,
+        "text": "the"
+      },
+      {
+        "offset": 35697080,
+        "duration": 8293330,
+        "text": "conversation"
+      },
+      {
+        "offset": 52283750,
+        "duration": 1081660,
+        "text": "The"
+      },
+      {
+        "offset": 53485410,
+        "duration": 6009580,
+        "text": "dispatcher"
+      },
+      {
+        "offset": 59615410,
+        "duration": 5288330,
+        "text": "handles"
+      },
+      {
+        "offset": 65024160,
+        "duration": 1081660,
+        "text": "the"
+      },
+      {
+        "offset": 66225830,
+        "duration": 3966250,
+        "text": "next"
+      },
+      {
+        "offset": 70312500,
+        "duration": 3485410,
+        "text": "steps"
+      },
+      {
+        "offset": 73918330,
+        "duration": 1322080,
+        "text": "in"
+      },
+      {
+        "offset": 75360410,
+        "duration": 5528750,
+        "text": "parallel"
+      }
+    ],
+    "audio": "/Users/toofarbutjustin/Downloads/bolna hack/deliverables/video/v2/voice/07.mp3"
+  },
+  {
+    "index": 8,
+    "start": 96.7,
+    "end": 111.7,
+    "text": "In this recorded demo, ambulance and family outreach are simulated, with a location link shown alongside them. Each step has a visible status, so you can follow the handoff instead of wondering what's happening behind the scenes.",
+    "voice": "en-IN-NeerjaExpressiveNeural",
+    "words": [
+      {
+        "offset": 980830,
+        "duration": 1322080,
+        "text": "In"
+      },
+      {
+        "offset": 2422910,
+        "duration": 2163330,
+        "text": "this"
+      },
+      {
+        "offset": 4706660,
+        "duration": 4927910,
+        "text": "recorded"
+      },
+      {
+        "offset": 9755000,
+        "duration": 4327080,
+        "text": "demo"
+      },
+      {
+        "offset": 16005000,
+        "duration": 5649160,
+        "text": "ambulance"
+      },
+      {
+        "offset": 21774160,
+        "duration": 1442500,
+        "text": "and"
+      },
+      {
+        "offset": 23336660,
+        "duration": 4447080,
+        "text": "family"
+      },
+      {
+        "offset": 27903750,
+        "duration": 5047910,
+        "text": "outreach"
+      },
+      {
+        "offset": 33072080,
+        "duration": 1322080,
+        "text": "are"
+      },
+      {
+        "offset": 34514580,
+        "duration": 7692500,
+        "text": "simulated"
+      },
+      {
+        "offset": 44610410,
+        "duration": 1442500,
+        "text": "with"
+      },
+      {
+        "offset": 46172910,
+        "duration": 360409,
+        "text": "a"
+      },
+      {
+        "offset": 46653750,
+        "duration": 5408750,
+        "text": "location"
+      },
+      {
+        "offset": 52182500,
+        "duration": 2403750,
+        "text": "link"
+      },
+      {
+        "offset": 54706660,
+        "duration": 4327080,
+        "text": "shown"
+      },
+      {
+        "offset": 59153750,
+        "duration": 5889580,
+        "text": "alongside"
+      },
+      {
+        "offset": 65163330,
+        "duration": 3485410,
+        "text": "them"
+      },
+      {
+        "offset": 77644160,
+        "duration": 2764580,
+        "text": "Each"
+      },
+      {
+        "offset": 80528750,
+        "duration": 3365410,
+        "text": "step"
+      },
+      {
+        "offset": 84014580,
+        "duration": 2163330,
+        "text": "has"
+      },
+      {
+        "offset": 86297910,
+        "duration": 721250,
+        "text": "a"
+      },
+      {
+        "offset": 87139580,
+        "duration": 4206660,
+        "text": "visible"
+      },
+      {
+        "offset": 91466250,
+        "duration": 5769160,
+        "text": "status"
+      },
+      {
+        "offset": 99639580,
+        "duration": 1081660,
+        "text": "so"
+      },
+      {
+        "offset": 100841250,
+        "duration": 1081660,
+        "text": "you"
+      },
+      {
+        "offset": 102043330,
+        "duration": 1682500,
+        "text": "can"
+      },
+      {
+        "offset": 103846250,
+        "duration": 3485410,
+        "text": "follow"
+      },
+      {
+        "offset": 107452080,
+        "duration": 1202080,
+        "text": "the"
+      },
+      {
+        "offset": 108774160,
+        "duration": 4567500,
+        "text": "handoff"
+      },
+      {
+        "offset": 113461660,
+        "duration": 3605830,
+        "text": "instead"
+      },
+      {
+        "offset": 117187500,
+        "duration": 1682500,
+        "text": "of"
+      },
+      {
+        "offset": 118990410,
+        "duration": 4327080,
+        "text": "wondering"
+      },
+      {
+        "offset": 123437500,
+        "duration": 2644160,
+        "text": "what's"
+      },
+      {
+        "offset": 126202080,
+        "duration": 4206660,
+        "text": "happening"
+      },
+      {
+        "offset": 130528750,
+        "duration": 3846250,
+        "text": "behind"
+      },
+      {
+        "offset": 134495000,
+        "duration": 721250,
+        "text": "the"
+      },
+      {
+        "offset": 135336660,
+        "duration": 5168330,
+        "text": "scenes"
+      }
+    ],
+    "audio": "/Users/toofarbutjustin/Downloads/bolna hack/deliverables/video/v2/voice/08.mp3"
+  },
+  {
+    "index": 9,
+    "start": 112.6,
+    "end": 126.7,
+    "text": "When speaking freely isn't possible, the interaction changes. Silent mode offers discreet prompts and keypad responses. Less pressure on the caller, with a clear path to the next step.",
+    "voice": "en-IN-NeerjaExpressiveNeural",
+    "words": [
+      {
+        "offset": 980830,
+        "duration": 1442500,
+        "text": "When"
+      },
+      {
+        "offset": 2543330,
+        "duration": 4927910,
+        "text": "speaking"
+      },
+      {
+        "offset": 7591250,
+        "duration": 3966250,
+        "text": "freely"
+      },
+      {
+        "offset": 11677910,
+        "duration": 2884580,
+        "text": "isn't"
+      },
+      {
+        "offset": 14682500,
+        "duration": 5889580,
+        "text": "possible"
+      },
+      {
+        "offset": 22855830,
+        "duration": 961660,
+        "text": "the"
+      },
+      {
+        "offset": 23937500,
+        "duration": 6370000,
+        "text": "interaction"
+      },
+      {
+        "offset": 30427910,
+        "duration": 5889580,
+        "text": "changes"
+      },
+      {
+        "offset": 45312500,
+        "duration": 5408750,
+        "text": "Silent"
+      },
+      {
+        "offset": 50841250,
+        "duration": 2524160,
+        "text": "mode"
+      },
+      {
+        "offset": 53485410,
+        "duration": 4567500,
+        "text": "offers"
+      },
+      {
+        "offset": 58172910,
+        "duration": 4927910,
+        "text": "discreet"
+      },
+      {
+        "offset": 63221250,
+        "duration": 5649160,
+        "text": "prompts"
+      },
+      {
+        "offset": 68990410,
+        "duration": 2403750,
+        "text": "and"
+      },
+      {
+        "offset": 71514580,
+        "duration": 4567500,
+        "text": "keypad"
+      },
+      {
+        "offset": 76202080,
+        "duration": 8052910,
+        "text": "responses"
+      },
+      {
+        "offset": 93028750,
+        "duration": 3245000,
+        "text": "Less"
+      },
+      {
+        "offset": 96394160,
+        "duration": 4687500,
+        "text": "pressure"
+      },
+      {
+        "offset": 101202080,
+        "duration": 1081660,
+        "text": "on"
+      },
+      {
+        "offset": 102403750,
+        "duration": 721250,
+        "text": "the"
+      },
+      {
+        "offset": 103245000,
+        "duration": 4567500,
+        "text": "caller"
+      },
+      {
+        "offset": 110456660,
+        "duration": 1442500,
+        "text": "with"
+      },
+      {
+        "offset": 112019160,
+        "duration": 480830,
+        "text": "a"
+      },
+      {
+        "offset": 112620000,
+        "duration": 3245000,
+        "text": "clear"
+      },
+      {
+        "offset": 115985410,
+        "duration": 3966250,
+        "text": "path"
+      },
+      {
+        "offset": 120072080,
+        "duration": 1202080,
+        "text": "to"
+      },
+      {
+        "offset": 121394160,
+        "duration": 841250,
+        "text": "the"
+      },
+      {
+        "offset": 122355830,
+        "duration": 3605830,
+        "text": "next"
+      },
+      {
+        "offset": 126081660,
+        "duration": 3605830,
+        "text": "step"
+      }
+    ],
+    "audio": "/Users/toofarbutjustin/Downloads/bolna hack/deliverables/video/v2/voice/09.mp3"
+  },
+  {
+    "index": 10,
+    "start": 127.7,
+    "end": 142.7,
+    "text": "The incident report brings details and timestamped actions together. This is a prototype, not a live emergency response. No public emergency service was contacted. Every step stays visible.",
+    "voice": "en-IN-NeerjaExpressiveNeural",
+    "words": [
+      {
+        "offset": 980830,
+        "duration": 1802910,
+        "text": "The"
+      },
+      {
+        "offset": 2903750,
+        "duration": 4807500,
+        "text": "incident"
+      },
+      {
+        "offset": 7831660,
+        "duration": 3605830,
+        "text": "report"
+      },
+      {
+        "offset": 11557500,
+        "duration": 3125000,
+        "text": "brings"
+      },
+      {
+        "offset": 14802910,
+        "duration": 5408750,
+        "text": "details"
+      },
+      {
+        "offset": 20331660,
+        "duration": 1922910,
+        "text": "and"
+      },
+      {
+        "offset": 22375000,
+        "duration": 6250000,
+        "text": "timestamped"
+      },
+      {
+        "offset": 28745000,
+        "duration": 4447080,
+        "text": "actions"
+      },
+      {
+        "offset": 33312500,
+        "duration": 5408750,
+        "text": "together"
+      },
+      {
+        "offset": 47235410,
+        "duration": 2764580,
+        "text": "This"
+      },
+      {
+        "offset": 50120000,
+        "duration": 1081660,
+        "text": "is"
+      },
+      {
+        "offset": 51322080,
+        "duration": 600830,
+        "text": "a"
+      },
+      {
+        "offset": 52043330,
+        "duration": 6850830,
+        "text": "prototype"
+      },
+      {
+        "offset": 61297910,
+        "duration": 3005000,
+        "text": "not"
+      },
+      {
+        "offset": 64422910,
+        "duration": 480830,
+        "text": "a"
+      },
+      {
+        "offset": 65024160,
+        "duration": 3125000,
+        "text": "live"
+      },
+      {
+        "offset": 68269160,
+        "duration": 6130000,
+        "text": "emergency"
+      },
+      {
+        "offset": 74519160,
+        "duration": 7331660,
+        "text": "response"
+      },
+      {
+        "offset": 90865410,
+        "duration": 2403750,
+        "text": "No"
+      },
+      {
+        "offset": 93389580,
+        "duration": 4206660,
+        "text": "public"
+      },
+      {
+        "offset": 97716250,
+        "duration": 6250000,
+        "text": "emergency"
+      },
+      {
+        "offset": 104086660,
+        "duration": 4327080,
+        "text": "service"
+      },
+      {
+        "offset": 108533750,
+        "duration": 1922910,
+        "text": "was"
+      },
+      {
+        "offset": 110577080,
+        "duration": 7211660,
+        "text": "contacted"
+      },
+      {
+        "offset": 126682500,
+        "duration": 3605830,
+        "text": "Every"
+      },
+      {
+        "offset": 130408750,
+        "duration": 3245000,
+        "text": "step"
+      },
+      {
+        "offset": 133774160,
+        "duration": 3966250,
+        "text": "stays"
+      },
+      {
+        "offset": 137860410,
+        "duration": 5528750,
+        "text": "visible"
+      }
+    ],
+    "audio": "/Users/toofarbutjustin/Downloads/bolna hack/deliverables/video/v2/voice/10.mp3"
+  },
+  {
+    "index": 11,
+    "start": 143.2,
+    "end": 149.8,
+    "text": "Ek Awaaz. One voice, many calls. Built with Bolna.",
+    "voice": "en-IN-NeerjaExpressiveNeural",
+    "words": [
+      {
+        "offset": 980830,
+        "duration": 3966250,
+        "text": "Ek"
+      },
+      {
+        "offset": 5067500,
+        "duration": 5769160,
+        "text": "Awaaz"
+      },
+      {
+        "offset": 19711660,
+        "duration": 3365410,
+        "text": "One"
+      },
+      {
+        "offset": 23197080,
+        "duration": 4086660,
+        "text": "voice"
+      },
+      {
+        "offset": 29206660,
+        "duration": 3005000,
+        "text": "many"
+      },
+      {
+        "offset": 32331660,
+        "duration": 5408750,
+        "text": "calls"
+      },
+      {
+        "offset": 46634580,
+        "duration": 3485410,
+        "text": "Built"
+      },
+      {
+        "offset": 50240410,
+        "duration": 1682500,
+        "text": "with"
+      },
+      {
+        "offset": 52043330,
+        "duration": 5528750,
+        "text": "Bolna"
+      }
+    ],
+    "audio": "/Users/toofarbutjustin/Downloads/bolna hack/deliverables/video/v2/voice/11.mp3"
+  }
+]

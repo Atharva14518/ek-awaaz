@@ -1,0 +1,55 @@
+{
+  "index": 11,
+  "start": 143.2,
+  "end": 149.8,
+  "text": "Ek Awaaz. One voice, many calls. Built with Bolna.",
+  "voice": "en-IN-NeerjaExpressiveNeural",
+  "words": [
+    {
+      "offset": 980830,
+      "duration": 3966250,
+      "text": "Ek"
+    },
+    {
+      "offset": 5067500,
+      "duration": 5769160,
+      "text": "Awaaz"
+    },
+    {
+      "offset": 19711660,
+      "duration": 3365410,
+      "text": "One"
+    },
+    {
+      "offset": 23197080,
+      "duration": 4086660,
+      "text": "voice"
+    },
+    {
+      "offset": 29206660,
+      "duration": 3005000,
+      "text": "many"
+    },
+    {
+      "offset": 32331660,
+      "duration": 5408750,
+      "text": "calls"
+    },
+    {
+      "offset": 46634580,
+      "duration": 3485410,
+      "text": "Built"
+    },
+    {
+      "offset": 50240410,
+      "duration": 1682500,
+      "text": "with"
+    },
+    {
+      "offset": 52043330,
+      "duration": 5528750,
+      "text": "Bolna"
+    }
+  ],
+  "audio": "/Users/toofarbutjustin/Downloads/bolna hack/deliverables/video/v2/voice/11.mp3"
+}

@@ -1,0 +1,1 @@
+As the caller speaks, their words appear live. Location, injuries, people, and hazards are highlighted. The incident card fills itself in. When the caller corrects the address, the old location is replaced. Nothing moves forward until the type and location are clearly confirmed.

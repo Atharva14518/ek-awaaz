@@ -1,0 +1,95 @@
+{
+  "index": 7,
+  "start": 87.5,
+  "end": 95.7,
+  "text": "Now the work splits. The listener supports the conversation. The dispatcher handles the next steps in parallel.",
+  "voice": "en-IN-NeerjaExpressiveNeural",
+  "words": [
+    {
+      "offset": 980830,
+      "duration": 2884580,
+      "text": "Now"
+    },
+    {
+      "offset": 3985410,
+      "duration": 1202080,
+      "text": "the"
+    },
+    {
+      "offset": 5307500,
+      "duration": 3005000,
+      "text": "work"
+    },
+    {
+      "offset": 8432500,
+      "duration": 5769160,
+      "text": "splits"
+    },
+    {
+      "offset": 23317500,
+      "duration": 1081660,
+      "text": "The"
+    },
+    {
+      "offset": 24519160,
+      "duration": 4687500,
+      "text": "listener"
+    },
+    {
+      "offset": 29327080,
+      "duration": 5288330,
+      "text": "supports"
+    },
+    {
+      "offset": 34735410,
+      "duration": 841250,
+      "text": "the"
+    },
+    {
+      "offset": 35697080,
+      "duration": 8293330,
+      "text": "conversation"
+    },
+    {
+      "offset": 52283750,
+      "duration": 1081660,
+      "text": "The"
+    },
+    {
+      "offset": 53485410,
+      "duration": 6009580,
+      "text": "dispatcher"
+    },
+    {
+      "offset": 59615410,
+      "duration": 5288330,
+      "text": "handles"
+    },
+    {
+      "offset": 65024160,
+      "duration": 1081660,
+      "text": "the"
+    },
+    {
+      "offset": 66225830,
+      "duration": 3966250,
+      "text": "next"
+    },
+    {
+      "offset": 70312500,
+      "duration": 3485410,
+      "text": "steps"
+    },
+    {
+      "offset": 73918330,
+      "duration": 1322080,
+      "text": "in"
+    },
+    {
+      "offset": 75360410,
+      "duration": 5528750,
+      "text": "parallel"
+    }
+  ],
+  "audio": "/Users/toofarbutjustin/Downloads/bolna hack/deliverables/video/v2/voice/07.mp3"
+}

@@ -1,0 +1,32 @@
+[Script Info]
+ScriptType: v4.00+
+PlayResX: 1080
+PlayResY: 1920
+ScaledBorderAndShadow: yes
+WrapStyle: 2
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: Caption,Poppins Medium,48,&H00FFFFFF,&H00FFFFFF,&H00161B1F,&H00161B1F,0,0,0,0,100,100,0,0,1,0,0,5,0,0,0,1
+Style: Pill,Poppins Medium,28,&H10161B1F,&H10161B1F,&H10161B1F,&H10161B1F,0,0,0,0,100,100,0,0,1,0,0,7,0,0,0,1
+
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 0,0:00:00.70,0:00:03.15,Pill,,0,0,0,,{\an7\pos(134,1775)\p1\fad(70,70)}m 15 0 l 796 0 b 811 0 811 0 811 15 l 811 50 b 811 65 811 65 796 65 l 15 65 b 0 65 0 65 0 50 l 0 15 b 0 0 0 0 15 0
+Dialogue: 1,0:00:00.70,0:00:03.15,Caption,,0,0,0,,{\an5\pos(540,1807)\fad(70,70)}In an emergency, one person shouldn't have
+Dialogue: 0,0:00:03.17,0:00:04.46,Pill,,0,0,0,,{\an7\pos(360,1775)\p1\fad(70,70)}m 15 0 l 345 0 b 360 0 360 0 360 15 l 360 50 b 360 65 360 65 345 65 l 15 65 b 0 65 0 65 0 50 l 0 15 b 0 0 0 0 15 0
+Dialogue: 1,0:00:03.17,0:00:04.46,Caption,,0,0,0,,{\an5\pos(540,1807)\fad(70,70)}to make five calls.
+Dialogue: 0,0:00:05.20,0:00:07.41,Pill,,0,0,0,,{\an7\pos(102,1775)\p1\fad(70,70)}m 15 0 l 860 0 b 875 0 875 0 875 15 l 875 50 b 875 65 875 65 860 65 l 15 65 b 0 65 0 65 0 50 l 0 15 b 0 0 0 0 15 0
+Dialogue: 1,0:00:05.20,0:00:07.41,Caption,,0,0,0,,{\an5\pos(540,1807)\fad(70,70)}What if one calm conversation could coordinate
+Dialogue: 0,0:00:07.44,0:00:08.62,Pill,,0,0,0,,{\an7\pos(385,1775)\p1\fad(70,70)}m 15 0 l 295 0 b 310 0 310 0 310 15 l 310 50 b 310 65 310 65 295 65 l 15 65 b 0 65 0 65 0 50 l 0 15 b 0 0 0 0 15 0
+Dialogue: 1,0:00:07.44,0:00:08.62,Caption,,0,0,0,,{\an5\pos(540,1807)\fad(70,70)}the next steps?
+Dialogue: 0,0:00:08.79,0:00:11.74,Pill,,0,0,0,,{\an7\pos(174,1775)\p1\fad(70,70)}m 15 0 l 717 0 b 732 0 732 0 732 15 l 732 50 b 732 65 732 65 717 65 l 15 65 b 0 65 0 65 0 50 l 0 15 b 0 0 0 0 15 0
+Dialogue: 1,0:00:08.79,0:00:11.74,Caption,,0,0,0,,{\an5\pos(540,1807)\fad(70,70)}Listen, understand, confirm, coordinate.
+Dialogue: 0,0:00:12.41,0:00:13.67,Pill,,0,0,0,,{\an7\pos(348,1775)\p1\fad(70,70)}m 15 0 l 369 0 b 384 0 384 0 384 15 l 384 50 b 384 65 384 65 369 65 l 15 65 b 0 65 0 65 0 50 l 0 15 b 0 0 0 0 15 0
+Dialogue: 1,0:00:12.41,0:00:13.67,Caption,,0,0,0,,{\an5\pos(540,1807)\fad(70,70)}Here's how it works.
+Dialogue: 0,0:00:14.20,0:00:15.32,Pill,,0,0,0,,{\an7\pos(430,1775)\p1\fad(70,70)}m 15 0 l 204 0 b 219 0 219 0 219 15 l 219 50 b 219 65 219 65 204 65 l 15 65 b 0 65 0 65 0 50 l 0 15 b 0 0 0 0 15 0
+Dialogue: 1,0:00:14.20,0:00:15.32,Caption,,0,0,0,,{\an5\pos(540,1807)\fad(70,70)}Ek Awaaz.
+Dialogue: 0,0:00:16.03,0:00:17.96,Pill,,0,0,0,,{\an7\pos(323,1775)\p1\fad(70,70)}m 15 0 l 419 0 b 434 0 434 0 434 15 l 434 50 b 434 65 434 65 419 65 l 15 65 b 0 65 0 65 0 50 l 0 15 b 0 0 0 0 15 0
+Dialogue: 1,0:00:16.03,0:00:17.96,Caption,,0,0,0,,{\an5\pos(540,1807)\fad(70,70)}One voice, many calls.
+Dialogue: 0,0:00:18.67,0:00:19.90,Pill,,0,0,0,,{\an7\pos(379,1775)\p1\fad(70,70)}m 15 0 l 306 0 b 321 0 321 0 321 15 l 321 50 b 321 65 321 65 306 65 l 15 65 b 0 65 0 65 0 50 l 0 15 b 0 0 0 0 15 0
+Dialogue: 1,0:00:18.67,0:00:19.90,Caption,,0,0,0,,{\an5\pos(540,1807)\fad(70,70)}Built with Bolna.

@@ -1,0 +1,35 @@
+1
+00:00:00,698 --> 00:00:03,149
+In an emergency, one person shouldn't have
+
+2
+00:00:03,174 --> 00:00:04,464
+to make five calls.
+
+3
+00:00:05,203 --> 00:00:07,414
+What if one calm conversation could coordinate
+
+4
+00:00:07,439 --> 00:00:08,621
+the next steps?
+
+5
+00:00:08,791 --> 00:00:11,744
+Listen, understand, confirm, coordinate.
+
+6
+00:00:12,406 --> 00:00:13,668
+Here's how it works.
+
+7
+00:00:14,196 --> 00:00:15,319
+Ek Awaaz.
+
+8
+00:00:16,033 --> 00:00:17,957
+One voice, many calls.
+
+9
+00:00:18,672 --> 00:00:19,901
+Built with Bolna.

@@ -1,0 +1,175 @@
+{
+  "index": 5,
+  "start": 57.7,
+  "end": 74.7,
+  "text": "Beside the transcript, the incident card takes shape. Location, people, and severity come together. Watch the address update when the caller gives a correction. The latest information matters more than the first guess.",
+  "voice": "en-IN-NeerjaExpressiveNeural",
+  "words": [
+    {
+      "offset": 980830,
+      "duration": 4567500,
+      "text": "Beside"
+    },
+    {
+      "offset": 5668330,
+      "duration": 841250,
+      "text": "the"
+    },
+    {
+      "offset": 6630000,
+      "duration": 7452080,
+      "text": "transcript"
+    },
+    {
+      "offset": 16125000,
+      "duration": 1322080,
+      "text": "the"
+    },
+    {
+      "offset": 17567500,
+      "duration": 4567500,
+      "text": "incident"
+    },
+    {
+      "offset": 22255000,
+      "duration": 3365410,
+      "text": "card"
+    },
+    {
+      "offset": 25740410,
+      "duration": 2884580,
+      "text": "takes"
+    },
+    {
+      "offset": 28745000,
+      "duration": 3485410,
+      "text": "shape"
+    },
+    {
+      "offset": 41225830,
+      "duration": 7211660,
+      "text": "Location"
+    },
+    {
+      "offset": 49399160,
+      "duration": 4807500,
+      "text": "people"
+    },
+    {
+      "offset": 56009580,
+      "duration": 1802910,
+      "text": "and"
+    },
+    {
+      "offset": 57932500,
+      "duration": 5408750,
+      "text": "severity"
+    },
+    {
+      "offset": 63461660,
+      "duration": 2524160,
+      "text": "come"
+    },
+    {
+      "offset": 66105830,
+      "duration": 5649160,
+      "text": "together"
+    },
+    {
+      "offset": 80649160,
+      "duration": 3245000,
+      "text": "Watch"
+    },
+    {
+      "offset": 84014580,
+      "duration": 1442500,
+      "text": "the"
+    },
+    {
+      "offset": 85577080,
+      "duration": 4206660,
+      "text": "address"
+    },
+    {
+      "offset": 89903750,
+      "duration": 4687500,
+      "text": "update"
+    },
+    {
+      "offset": 94711660,
+      "duration": 1562500,
+      "text": "when"
+    },
+    {
+      "offset": 96394160,
+      "duration": 721250,
+      "text": "the"
+    },
+    {
+      "offset": 97235410,
+      "duration": 3485410,
+      "text": "caller"
+    },
+    {
+      "offset": 100841250,
+      "duration": 2764580,
+      "text": "gives"
+    },
+    {
+      "offset": 103725830,
+      "duration": 480830,
+      "text": "a"
+    },
+    {
+      "offset": 104327080,
+      "duration": 6250000,
+      "text": "correction"
+    },
+    {
+      "offset": 118870000,
+      "duration": 961660,
+      "text": "The"
+    },
+    {
+      "offset": 119952080,
+      "duration": 4687500,
+      "text": "latest"
+    },
+    {
+      "offset": 124759580,
+      "duration": 5769160,
+      "text": "information"
+    },
+    {
+      "offset": 130649160,
+      "duration": 5047910,
+      "text": "matters"
+    },
+    {
+      "offset": 135817500,
+      "duration": 2283750,
+      "text": "more"
+    },
+    {
+      "offset": 138221250,
+      "duration": 1802910,
+      "text": "than"
+    },
+    {
+      "offset": 140144160,
+      "duration": 600830,
+      "text": "the"
+    },
+    {
+      "offset": 140865410,
+      "duration": 3846250,
+      "text": "first"
+    },
+    {
+      "offset": 144831660,
+      "duration": 3966250,
+      "text": "guess"
+    }
+  ],
+  "audio": "/Users/toofarbutjustin/Downloads/bolna hack/deliverables/video/v2/voice/05.mp3"
+}

@@ -1,0 +1,195 @@
+{
+  "index": 8,
+  "start": 96.7,
+  "end": 111.7,
+  "text": "In this recorded demo, ambulance and family outreach are simulated, with a location link shown alongside them. Each step has a visible status, so you can follow the handoff instead of wondering what's happening behind the scenes.",
+  "voice": "en-IN-NeerjaExpressiveNeural",
+  "words": [
+    {
+      "offset": 980830,
+      "duration": 1322080,
+      "text": "In"
+    },
+    {
+      "offset": 2422910,
+      "duration": 2163330,
+      "text": "this"
+    },
+    {
+      "offset": 4706660,
+      "duration": 4927910,
+      "text": "recorded"
+    },
+    {
+      "offset": 9755000,
+      "duration": 4327080,
+      "text": "demo"
+    },
+    {
+      "offset": 16005000,
+      "duration": 5649160,
+      "text": "ambulance"
+    },
+    {
+      "offset": 21774160,
+      "duration": 1442500,
+      "text": "and"
+    },
+    {
+      "offset": 23336660,
+      "duration": 4447080,
+      "text": "family"
+    },
+    {
+      "offset": 27903750,
+      "duration": 5047910,
+      "text": "outreach"
+    },
+    {
+      "offset": 33072080,
+      "duration": 1322080,
+      "text": "are"
+    },
+    {
+      "offset": 34514580,
+      "duration": 7692500,
+      "text": "simulated"
+    },
+    {
+      "offset": 44610410,
+      "duration": 1442500,
+      "text": "with"
+    },
+    {
+      "offset": 46172910,
+      "duration": 360409,
+      "text": "a"
+    },
+    {
+      "offset": 46653750,
+      "duration": 5408750,
+      "text": "location"
+    },
+    {
+      "offset": 52182500,
+      "duration": 2403750,
+      "text": "link"
+    },
+    {
+      "offset": 54706660,
+      "duration": 4327080,
+      "text": "shown"
+    },
+    {
+      "offset": 59153750,
+      "duration": 5889580,
+      "text": "alongside"
+    },
+    {
+      "offset": 65163330,
+      "duration": 3485410,
+      "text": "them"
+    },
+    {
+      "offset": 77644160,
+      "duration": 2764580,
+      "text": "Each"
+    },
+    {
+      "offset": 80528750,
+      "duration": 3365410,
+      "text": "step"
+    },
+    {
+      "offset": 84014580,
+      "duration": 2163330,
+      "text": "has"
+    },
+    {
+      "offset": 86297910,
+      "duration": 721250,
+      "text": "a"
+    },
+    {
+      "offset": 87139580,
+      "duration": 4206660,
+      "text": "visible"
+    },
+    {
+      "offset": 91466250,
+      "duration": 5769160,
+      "text": "status"
+    },
+    {
+      "offset": 99639580,
+      "duration": 1081660,
+      "text": "so"
+    },
+    {
+      "offset": 100841250,
+      "duration": 1081660,
+      "text": "you"
+    },
+    {
+      "offset": 102043330,
+      "duration": 1682500,
+      "text": "can"
+    },
+    {
+      "offset": 103846250,
+      "duration": 3485410,
+      "text": "follow"
+    },
+    {
+      "offset": 107452080,
+      "duration": 1202080,
+      "text": "the"
+    },
+    {
+      "offset": 108774160,
+      "duration": 4567500,
+      "text": "handoff"
+    },
+    {
+      "offset": 113461660,
+      "duration": 3605830,
+      "text": "instead"
+    },
+    {
+      "offset": 117187500,
+      "duration": 1682500,
+      "text": "of"
+    },
+    {
+      "offset": 118990410,
+      "duration": 4327080,
+      "text": "wondering"
+    },
+    {
+      "offset": 123437500,
+      "duration": 2644160,
+      "text": "what's"
+    },
+    {
+      "offset": 126202080,
+      "duration": 4206660,
+      "text": "happening"
+    },
+    {
+      "offset": 130528750,
+      "duration": 3846250,
+      "text": "behind"
+    },
+    {
+      "offset": 134495000,
+      "duration": 721250,
+      "text": "the"
+    },
+    {
+      "offset": 135336660,
+      "duration": 5168330,
+      "text": "scenes"
+    }
+  ],
+  "audio": "/Users/toofarbutjustin/Downloads/bolna hack/deliverables/video/v2/voice/08.mp3"
+}
