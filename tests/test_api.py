@@ -144,3 +144,67 @@ def test_live_intake_uses_listener_and_allowlisted_number() -> None:
     assert payload["agent_id"] == "listener-agent"
     assert payload["recipient_phone_number"] == "+919876543210"
     assert payload["user_data"]["session_id"] == "session-1"
+
+
+def test_silent_intake_submits_confirmed_location_without_a_call() -> None:
+    with TestClient(app) as client:
+        created = client.post("/api/sessions", params={"source": "manual"})
+        assert created.status_code == 201
+        session_id = created.json()["incident"]["session_id"]
+
+        uploaded = client.put(
+            f"/api/sessions/{session_id}/evidence-video",
+            content=b"short-demo-webm",
+            headers={"Content-Type": "video/webm"},
+        )
+        assert uploaded.status_code == 201
+
+        submitted = client.post(
+            f"/api/sessions/{session_id}/silent-intake",
+            json={
+                "incident_type": "road_accident",
+                "address": "VIT main gate, Pune",
+                "address_confirmed": True,
+                "lat": 18.4635,
+                "lng": 73.8682,
+                "people": 2,
+                "injured": 1,
+                "conscious": "no",
+                "severity": "critical",
+                "notes": "Fuel leaking from the bike",
+                "motion_detected": True,
+                "motion_peak": 24.6,
+                "video_captured": True,
+                "video_duration_seconds": 10,
+            },
+        )
+        assert submitted.status_code == 200
+        body = submitted.json()
+        assert body["source"] == "manual"
+        assert body["demo_mode"] is True
+        assert body["incident"]["silent_mode"] is True
+        assert body["incident"]["dispatch_confirmed"] is True
+        assert body["incident"]["location"]["text"] == "VIT main gate, Pune"
+        assert body["incident"]["location"]["gps"] == {"lat": 18.4635, "lng": 73.8682}
+        assert body["incident"]["evidence"]["motion_detected"] is True
+        assert body["incident"]["evidence"]["video_duration_seconds"] == 10
+        evidence = client.get(f"/api/sessions/{session_id}/evidence-video")
+        assert evidence.status_code == 200
+        assert evidence.content == b"short-demo-webm"
+        assert client.delete(f"/api/sessions/{session_id}").status_code == 204
+
+
+def test_silent_intake_requires_location_confirmation() -> None:
+    with TestClient(app) as client:
+        created = client.post("/api/sessions", params={"source": "manual"})
+        session_id = created.json()["incident"]["session_id"]
+        response = client.post(
+            f"/api/sessions/{session_id}/silent-intake",
+            json={
+                "incident_type": "medical",
+                "address": "Near the college gate",
+                "address_confirmed": False,
+            },
+        )
+        assert response.status_code == 400
+        assert "location must be confirmed" in response.json()["detail"].lower()

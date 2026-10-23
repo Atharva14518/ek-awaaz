@@ -43,6 +43,24 @@ export const api = {
     method: 'POST',
     body: JSON.stringify({ lat, lng }),
   }),
+  silentIntake: (id, incident) => request(`/api/sessions/${id}/silent-intake`, {
+    method: 'POST',
+    body: JSON.stringify(incident),
+  }),
+  uploadEvidenceVideo: async (id, blob) => {
+    const response = await fetch(`${API}/api/sessions/${id}/evidence-video`, {
+      method: 'PUT',
+      headers: { 'Content-Type': blob.type || 'video/webm' },
+      body: blob,
+    })
+    if (!response.ok) {
+      let message = `Video upload failed (${response.status})`
+      try { message = (await response.json()).detail || message } catch { /* keep fallback */ }
+      throw new Error(message)
+    }
+    return response.json()
+  },
+  evidenceVideoUrl: (id) => `${API}/api/sessions/${id}/evidence-video`,
   reports: () => request('/api/reports'),
   report: (id) => request(`/api/reports/${id}`),
   pdfUrl: (id) => `${API}/api/reports/${id}/pdf`,

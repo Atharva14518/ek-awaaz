@@ -22,6 +22,13 @@ For the live-phone version, choose **Call me live**, answer the configured phone
 and speak the same scenario. Bolna returns the completed call transcript to this
 console; the app then extracts and displays the incident through the same pipeline.
 
+For the no-voice path, clear the session and choose **Simulate spike** beside
+**I cannot speak**. Capture the browser location or type a landmark, confirm the
+address, record the 10-second scene clip, and submit. The incident card and
+simulated coordination timeline update without placing a voice call. Explain that
+real device motion monitoring requires browser permission and builds a rolling
+baseline while the page is open; a motion spike alone never triggers dispatch.
+
 ## 1:20–1:50 — correction and confirmation
 
 The scripted caller corrects the address:

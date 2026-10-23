@@ -11,6 +11,7 @@ Ek Awaaz is a voice-first emergency coordination demo for the Bolna Symphony Bui
 - Rules-first multilingual extraction with optional Groq structured extraction
 - LangGraph dispatcher with explicit confirmation gating, parallel dispatch actions, retries, and a kill switch
 - Bolna listener/dispatcher adapter using current v2 agent, call, execution, inbound setup, and webhook flows
+- No-voice incident popup with browser motion monitoring, GPS/address confirmation, and a 10-second scene clip
 - Silent-mode DTMF flow and browser GPS sharing
 - Mock-by-default SMS adapter with an opt-in Twilio path
 - Searchable reports, incident detail, and downloadable PDF summaries
@@ -35,7 +36,7 @@ cp .env.example .env
 uvicorn backend.main:app --reload
 ```
 
-Open `http://127.0.0.1:8000`. Choose **Run demo** for the spoken scenario or **Silent demo** for DTMF mode. API docs are at `http://127.0.0.1:8000/docs`.
+Open `http://127.0.0.1:8000`. The console shows **I can speak** and **I cannot speak** side by side. Use **Simulate spike** for a reliable motion-popup demonstration without waiting for a device baseline. API docs are at `http://127.0.0.1:8000/docs`.
 
 For separate frontend development:
 
@@ -174,6 +175,8 @@ More detail is in [docs/architecture.md](docs/architecture.md), and the presenta
 - `POST /api/sessions/{id}/confirm` — confirm or correct before dispatch
 - `POST /api/sessions/{id}/dtmf` — silent-mode confirmation
 - `POST /api/sessions/{id}/location` — attach browser GPS
+- `POST /api/sessions/{id}/silent-intake` — submit a confirmed structured incident without speech
+- `PUT /api/sessions/{id}/evidence-video` — attach an explicitly recorded short scene clip
 - `POST /api/sessions/{id}/stop` — kill switch
 - `GET /api/reports` and `GET /api/reports/{id}/pdf` — report history and PDF export
 - `POST /api/webhooks/bolna` — normalized Bolna status/transcript webhook

@@ -54,6 +54,15 @@ class TranscriptItem(MutableModel):
     highlights: list[Highlight] = Field(default_factory=list)
 
 
+class Evidence(MutableModel):
+    motion_detected: bool = False
+    motion_peak: float | None = None
+    video_captured: bool = False
+    video_duration_seconds: int = 0
+    captured_at: datetime | None = None
+    file_name: str | None = None
+
+
 class Action(MutableModel):
     id: str = Field(default_factory=lambda: str(uuid4()))
     ts: datetime = Field(default_factory=utc_now)
@@ -77,6 +86,7 @@ class IncidentState(MutableModel):
     caller_safe: Literal["yes", "no", "unknown"] = "unknown"
     silent_mode: bool = False
     dispatch_confirmed: bool = False
+    evidence: Evidence = Field(default_factory=Evidence)
     actions: list[Action] = Field(default_factory=list)
     transcript: list[TranscriptItem] = Field(default_factory=list)
 
@@ -138,6 +148,23 @@ class GPSInput(BaseModel):
     lng: float = Field(ge=-180, le=180)
 
 
+class SilentIncidentInput(BaseModel):
+    incident_type: Literal["road_accident", "fire", "medical", "assault", "other"]
+    address: str = Field(min_length=3, max_length=500)
+    address_confirmed: bool
+    lat: float | None = Field(default=None, ge=-90, le=90)
+    lng: float | None = Field(default=None, ge=-180, le=180)
+    people: int = Field(default=1, ge=0, le=100)
+    injured: int = Field(default=1, ge=0, le=100)
+    conscious: Literal["yes", "no", "unknown"] = "unknown"
+    severity: Literal["low", "medium", "high", "critical"] = "high"
+    notes: str = Field(default="", max_length=1000)
+    motion_detected: bool = False
+    motion_peak: float | None = Field(default=None, ge=0, le=200)
+    video_captured: bool = False
+    video_duration_seconds: int = Field(default=0, ge=0, le=10)
+
+
 class ReportSummary(BaseModel):
     session_id: str
     started_at: datetime
@@ -148,4 +175,3 @@ class ReportSummary(BaseModel):
     severity: str
     source: str
     demo_mode: bool
-

@@ -6,7 +6,7 @@ from datetime import datetime, timezone
 from pathlib import Path
 from typing import Any
 
-from fastapi import Body, FastAPI, Header, HTTPException, Query, Response, WebSocket, WebSocketDisconnect, status
+from fastapi import Body, FastAPI, Header, HTTPException, Query, Request, Response, WebSocket, WebSocketDisconnect, status
 from fastapi.middleware.cors import CORSMiddleware
 from fastapi.responses import FileResponse, JSONResponse
 
@@ -19,8 +19,10 @@ from .models import (
     GPSInput,
     IncidentState,
     ReportSummary,
+    SilentIncidentInput,
     StoredSession,
     StreamEvent,
+    TranscriptItem,
     TranscriptInput,
 )
 from .orchestrator import IncidentOrchestrator
@@ -132,6 +134,11 @@ async def get_session(session_id: str) -> StoredSession:
 
 @app.delete("/api/sessions/{session_id}", status_code=status.HTTP_204_NO_CONTENT)
 async def clear_session(session_id: str) -> None:
+    session = store.get_session(session_id)
+    if session and session.incident.evidence.file_name:
+        evidence_path = settings.database_path.parent / "evidence" / session.incident.evidence.file_name
+        if evidence_path.exists():
+            evidence_path.unlink()
     for registry in [simulation_tasks, dispatch_tasks, intake_tasks]:
         task = registry.pop(session_id, None)
         if task and not task.done():
@@ -264,6 +271,109 @@ async def share_location(session_id: str, body: GPSInput) -> StoredSession:
     session = require_session(session_id)
     await orchestrator.set_gps(session, body.lat, body.lng)
     return session
+
+
+@app.post("/api/sessions/{session_id}/silent-intake", response_model=StoredSession)
+async def submit_silent_intake(session_id: str, body: SilentIncidentInput) -> StoredSession:
+    """Submit a confirmed, structured incident without requiring speech."""
+    session = require_session(session_id)
+    if session.status != "idle":
+        raise HTTPException(status_code=409, detail="Session has already been used")
+    if not body.address_confirmed:
+        raise HTTPException(status_code=400, detail="The location must be confirmed before proceeding")
+    if (body.lat is None) != (body.lng is None):
+        raise HTTPException(status_code=400, detail="Latitude and longitude must be provided together")
+
+    incident = session.incident
+    incident.type = body.incident_type
+    incident.location.text = body.address.strip()
+    incident.location.confidence = "high" if body.lat is not None else "medium"
+    incident.location.confirmed = True
+    if body.lat is not None and body.lng is not None:
+        incident.location.gps = {"lat": body.lat, "lng": body.lng}
+    incident.people.count = body.people
+    incident.people.injured = body.injured
+    incident.people.conscious = body.conscious
+    incident.severity = body.severity
+    incident.caller_safe = "unknown"
+    incident.silent_mode = True
+    incident.dispatch_confirmed = True
+    incident.evidence.motion_detected = body.motion_detected
+    incident.evidence.motion_peak = body.motion_peak
+    incident.evidence.video_captured = body.video_captured
+    incident.evidence.video_duration_seconds = body.video_duration_seconds
+    incident.evidence.captured_at = datetime.now(timezone.utc) if body.video_captured else None
+
+    summary = (
+        f"Silent incident form: {body.incident_type.replace('_', ' ')} at {body.address.strip()}. "
+        f"People: {body.people}; injured: {body.injured}; conscious: {body.conscious}."
+    )
+    if body.notes.strip():
+        summary += f" Notes: {body.notes.strip()}"
+    transcript = TranscriptItem(speaker="caller", text=summary)
+    incident.transcript.append(transcript)
+    session.source = "manual"
+    session.demo_mode = True
+    session.status = "awaiting_confirmation"
+    session.last_activity_at = transcript.ts
+    store.save_session(session)
+
+    await emit(StreamEvent(
+        event="transcript.chunk",
+        session_id=session_id,
+        ts=transcript.ts,
+        data={"chunk": transcript.model_dump(mode="json"), "simulated": True, "extraction": "structured form"},
+    ))
+    await emit(StreamEvent(
+        event="incident.updated",
+        session_id=session_id,
+        data={
+            "incident": incident.model_dump(mode="json"),
+            "changed": ["silent_mode", "location", "type", "people", "severity", "evidence", "dispatch_confirmed"],
+            "simulated": True,
+        },
+    ))
+    schedule_dispatch(session, simulated=True)
+    return session
+
+
+@app.put("/api/sessions/{session_id}/evidence-video", status_code=status.HTTP_201_CREATED)
+async def upload_evidence_video(session_id: str, request: Request) -> dict[str, Any]:
+    """Persist a short, explicitly recorded demo clip with a strict size cap."""
+    session = require_session(session_id)
+    content_type = request.headers.get("content-type", "").split(";", 1)[0].lower()
+    extensions = {"video/webm": ".webm", "video/mp4": ".mp4", "video/quicktime": ".mov"}
+    if content_type not in extensions:
+        raise HTTPException(status_code=415, detail="Only WebM, MP4, or QuickTime video is accepted")
+    body = await request.body()
+    if not body:
+        raise HTTPException(status_code=400, detail="The video is empty")
+    if len(body) > 15 * 1024 * 1024:
+        raise HTTPException(status_code=413, detail="The 10-second video must be smaller than 15 MB")
+
+    evidence_dir = settings.database_path.parent / "evidence"
+    evidence_dir.mkdir(parents=True, exist_ok=True)
+    file_name = f"{session_id}{extensions[content_type]}"
+    (evidence_dir / file_name).write_bytes(body)
+    session.incident.evidence.video_captured = True
+    session.incident.evidence.captured_at = datetime.now(timezone.utc)
+    session.incident.evidence.file_name = file_name
+    session.last_activity_at = session.incident.evidence.captured_at
+    store.save_session(session)
+    return {"stored": True, "bytes": len(body), "file_name": file_name}
+
+
+@app.get("/api/sessions/{session_id}/evidence-video")
+async def get_evidence_video(session_id: str) -> FileResponse:
+    session = require_session(session_id)
+    file_name = session.incident.evidence.file_name
+    if not file_name:
+        raise HTTPException(status_code=404, detail="No evidence video has been recorded")
+    path = settings.database_path.parent / "evidence" / file_name
+    if not path.exists():
+        raise HTTPException(status_code=404, detail="Evidence video is unavailable")
+    media_type = {".webm": "video/webm", ".mp4": "video/mp4", ".mov": "video/quicktime"}.get(path.suffix, "video/webm")
+    return FileResponse(path, media_type=media_type)
 
 
 @app.post("/api/sessions/{session_id}/silence", status_code=status.HTTP_202_ACCEPTED)

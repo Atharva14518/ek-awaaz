@@ -168,5 +168,18 @@ export default function useLiveSession() {
     }, () => setError('Location permission was not granted.'))
   }, [session])
 
-  return { session, connected, error, lastEvent, runDemo, startLiveCall, stop, clear, confirm, sendDigit, shareLocation }
+  const submitSilentIncident = useCallback(async (incident) => {
+    if (!session) return null
+    setError('')
+    try {
+      const updated = await api.silentIntake(session.incident.session_id, incident)
+      setSession(updated)
+      return updated
+    } catch (err) {
+      setError(err.message)
+      throw err
+    }
+  }, [session])
+
+  return { session, connected, error, lastEvent, runDemo, startLiveCall, submitSilentIncident, stop, clear, confirm, sendDigit, shareLocation }
 }
