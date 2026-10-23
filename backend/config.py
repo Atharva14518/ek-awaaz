@@ -36,6 +36,8 @@ class Settings:
     bolna_from_phone_number: str
     bolna_inbound_phone_number_id: str
     bolna_webhook_secret: str
+    live_demo_caller_number: str
+    live_dispatch_enabled: bool
     ambulance_demo_number: str
     police_demo_number: str
     family_demo_number: str
@@ -63,6 +65,7 @@ def get_settings() -> Settings:
     # Two separate switches are deliberate: a copied .env cannot enable calls
     # merely by turning demo mode off.
     allow_real_actions = _bool("ALLOW_REAL_ACTIONS", False) and not demo_mode
+    live_dispatch_enabled = _bool("LIVE_DISPATCH_ENABLED", False) and allow_real_actions
     return Settings(
         app_name="Ek Awaaz API",
         demo_mode=demo_mode,
@@ -79,6 +82,11 @@ def get_settings() -> Settings:
         bolna_from_phone_number=os.getenv("BOLNA_FROM_PHONE_NUMBER", ""),
         bolna_inbound_phone_number_id=os.getenv("BOLNA_INBOUND_PHONE_NUMBER_ID", ""),
         bolna_webhook_secret=os.getenv("BOLNA_WEBHOOK_SECRET", ""),
+        live_demo_caller_number=os.getenv(
+            "LIVE_DEMO_CALLER_NUMBER",
+            os.getenv("FAMILY_DEMO_NUMBER", ""),
+        ),
+        live_dispatch_enabled=live_dispatch_enabled,
         ambulance_demo_number=os.getenv("AMBULANCE_DEMO_NUMBER", ""),
         police_demo_number=os.getenv("POLICE_DEMO_NUMBER", ""),
         family_demo_number=os.getenv("FAMILY_DEMO_NUMBER", ""),
@@ -91,4 +99,3 @@ def get_settings() -> Settings:
         outbound_rate_limit=int(os.getenv("OUTBOUND_RATE_LIMIT", "3")),
         outbound_rate_window_seconds=int(os.getenv("OUTBOUND_RATE_WINDOW_SECONDS", "60")),
     )
-

@@ -18,6 +18,10 @@ Open Live Console and choose **Run demo**.
 
 Point to the highlighted transcript and incident card filling in. The same pipeline handles simulator and Bolna input.
 
+For the live-phone version, choose **Call me live**, answer the configured phone,
+and speak the same scenario. Bolna returns the completed call transcript to this
+console; the app then extracts and displays the incident through the same pipeline.
+
 ## 1:20–1:50 — correction and confirmation
 
 The scripted caller corrects the address:
@@ -47,4 +51,3 @@ Clear the session, then choose **Silent demo**.
 Open Reports, select the completed incident, and export the PDF.
 
 > “The record is timestamped, printable, and session-scoped. One frightened voice becomes calm understanding, confirmed action, and an accountable report.”
-

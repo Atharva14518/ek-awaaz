@@ -122,6 +122,9 @@ main { flex: 1; }
 .small-button.subtle { background: var(--card); color: var(--ink); border: 1px solid var(--line); }
 .small-button:disabled { opacity: .4; cursor: not-allowed; }
 .error-banner { background: #fff0e8; border: 1px solid #f0bba8; color: #8c351b; border-radius: 12px; padding: 11px 14px; margin-bottom: 15px; display: flex; align-items: center; gap: 9px; font-size: 12px; }
+.live-call-button { background: var(--coral); }
+.live-call-notice { background: var(--blue-soft); border: 1px solid #c9deec; color: #2c587b; border-radius: 12px; padding: 11px 14px; margin-bottom: 15px; display: flex; align-items: center; gap: 9px; font-size: 11px; }
+.live-call-notice strong { color: #163d5d; }
 .console-grid { display: grid; grid-template-columns: 1.05fr .88fr .86fr; gap: 14px; align-items: stretch; }
 .console-card { background: var(--card); border: 1px solid var(--line); border-radius: 17px; min-height: 590px; box-shadow: 0 8px 25px rgba(70, 48, 28, .045); overflow: hidden; }
 .card-heading { display: flex; justify-content: space-between; align-items: flex-start; padding: 22px 22px 18px; }

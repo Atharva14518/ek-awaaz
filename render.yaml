@@ -7,8 +7,10 @@ services:
     healthCheckPath: /api/health
     envVars:
       - key: DEMO_MODE
-        value: "true"
+        value: "false"
       - key: ALLOW_REAL_ACTIONS
+        value: "true"
+      - key: LIVE_DISPATCH_ENABLED
         value: "false"
       - key: SMS_PROVIDER
         value: mock

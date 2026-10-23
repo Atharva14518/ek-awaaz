@@ -23,6 +23,7 @@ export default function useLiveSession() {
 
   const applyEvent = useCallback((message) => {
     setLastEvent(message)
+    if (message.event === 'error') setError(message.data?.message || 'The live call could not be refreshed.')
     setSession((current) => {
       if (message.event === 'session.snapshot') return message.data.session
       if (!current) return current
@@ -112,6 +113,15 @@ export default function useLiveSession() {
     try { await api.simulate(session.incident.session_id, scenario) } catch (err) { setError(err.message) }
   }, [session])
 
+  const startLiveCall = useCallback(async () => {
+    if (!session) return
+    setError('')
+    try {
+      await api.startLiveCall(session.incident.session_id)
+      setSession(await api.getSession(session.incident.session_id))
+    } catch (err) { setError(err.message) }
+  }, [session])
+
   const stop = useCallback(async () => {
     if (!session) return
     try {
@@ -158,5 +168,5 @@ export default function useLiveSession() {
     }, () => setError('Location permission was not granted.'))
   }, [session])
 
-  return { session, connected, error, lastEvent, runDemo, stop, clear, confirm, sendDigit, shareLocation }
+  return { session, connected, error, lastEvent, runDemo, startLiveCall, stop, clear, confirm, sendDigit, shareLocation }
 }

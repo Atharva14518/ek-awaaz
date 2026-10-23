@@ -103,8 +103,8 @@ function TimelinePanel({ incident, startedAt }) {
   )
 }
 
-export default function LiveConsole() {
-  const { session, connected, error, runDemo, stop, clear, confirm, sendDigit, shareLocation } = useLiveSession()
+export default function LiveConsole({ config }) {
+  const { session, connected, error, runDemo, startLiveCall, stop, clear, confirm, sendDigit, shareLocation } = useLiveSession()
   const incident = session?.incident
   if (!session || !incident) return <div className="loading-page"><span className="listening"><i /> Preparing a safe session…</span>{error && <p>{error}</p>}</div>
 
@@ -115,11 +115,15 @@ export default function LiveConsole() {
         <div><span className="eyebrow"><Radio size={14} /> Mission control</span><h1>Live Console</h1><p>One call, understood together.</p></div>
         <div className="console-tools">
           <span className={`connection ${connected ? 'online' : ''}`}><i />{connected ? 'Live link connected' : 'Reconnecting'}</span>
+          {config.live_call_ready && <button className="small-button live-call-button" onClick={startLiveCall} disabled={session.status !== 'idle'}><PhoneCall size={15} /> Call me live</button>}
           <button className="small-button" onClick={() => runDemo('accident')} disabled={session.status !== 'idle'}><Play size={15} fill="currentColor" /> Run demo</button>
           <button className="small-button subtle" onClick={() => runDemo('silent')} disabled={session.status !== 'idle'}><Headphones size={15} /> Silent demo</button>
         </div>
       </div>
       {error && <div className="error-banner"><AlertTriangle size={17} />{error}</div>}
+      {session.source === 'bolna' && session.status === 'listening' && !incident.transcript.length && (
+        <div className="live-call-notice"><PhoneCall size={17} /><span><strong>Live call active.</strong> Answer the configured phone and complete the conversation. The verified Bolna transcript will appear here when the call finishes.</span></div>
+      )}
       <div className="console-grid">
         <TranscriptPanel transcript={incident.transcript || []} />
         <IncidentPanel incident={incident} onConfirm={confirm} onLocation={shareLocation} />
@@ -139,4 +143,3 @@ export default function LiveConsole() {
     </div>
   )
 }
-

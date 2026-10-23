@@ -33,6 +33,7 @@ store = SessionStore(settings.database_path)
 connections = ConnectionManager()
 simulation_tasks: dict[str, asyncio.Task] = {}
 dispatch_tasks: dict[str, asyncio.Task] = {}
+intake_tasks: dict[str, asyncio.Task] = {}
 
 
 async def emit(event: StreamEvent) -> None:
@@ -47,7 +48,7 @@ orchestrator = IncidentOrchestrator(settings, store, emit)
 async def lifespan(_: FastAPI):
     store.initialize()
     yield
-    for task in [*simulation_tasks.values(), *dispatch_tasks.values()]:
+    for task in [*simulation_tasks.values(), *dispatch_tasks.values(), *intake_tasks.values()]:
         if not task.done():
             task.cancel()
 
@@ -87,6 +88,7 @@ async def health() -> dict[str, Any]:
         "real_actions_enabled": settings.allow_real_actions,
         "groq_configured": bool(settings.groq_api_key),
         "bolna_configured": orchestrator.bolna.configured,
+        "bolna_intake_configured": orchestrator.bolna.intake_configured,
     }
 
 
@@ -97,6 +99,8 @@ async def public_config() -> dict[str, Any]:
         "real_actions_enabled": settings.allow_real_actions,
         "demo_phone_number": settings.bolna_from_phone_number,
         "listener_agent_configured": bool(settings.bolna_listener_agent_id),
+        "live_call_ready": orchestrator.bolna.intake_configured,
+        "live_dispatch_enabled": settings.live_dispatch_enabled,
         "services": {
             "groq": bool(settings.groq_api_key),
             "bolna": bool(settings.bolna_api_key),
@@ -128,7 +132,7 @@ async def get_session(session_id: str) -> StoredSession:
 
 @app.delete("/api/sessions/{session_id}", status_code=status.HTTP_204_NO_CONTENT)
 async def clear_session(session_id: str) -> None:
-    for registry in [simulation_tasks, dispatch_tasks]:
+    for registry in [simulation_tasks, dispatch_tasks, intake_tasks]:
         task = registry.pop(session_id, None)
         if task and not task.done():
             task.cancel()
@@ -168,6 +172,56 @@ async def start_simulation(
     ))
     simulation_tasks[session_id] = task
     return {"session_id": session_id, "status": "listening", "simulated": True, "scenario": scenario}
+
+
+@app.post("/api/sessions/{session_id}/live-call", status_code=status.HTTP_202_ACCEPTED)
+async def start_live_call(
+    session_id: str,
+    confirm: bool = Body(embed=True),
+) -> dict[str, Any]:
+    """Ring one preconfigured stand-in number with the Bolna Listener agent."""
+    if not confirm:
+        raise HTTPException(status_code=400, detail="Explicit confirmation is required")
+    session = require_session(session_id)
+    if session.status != "idle":
+        raise HTTPException(status_code=409, detail="Session has already been used")
+    if not orchestrator.bolna.intake_configured:
+        raise HTTPException(
+            status_code=503,
+            detail="Live call needs both safety switches, a Bolna key, Listener agent ID, and LIVE_DEMO_CALLER_NUMBER",
+        )
+
+    try:
+        result = await orchestrator.bolna.place_intake_call(session_id)
+    except Exception as exc:
+        raise HTTPException(status_code=502, detail=f"Bolna could not start the call: {str(exc)[:220]}") from exc
+    execution_id = str(result.get("execution_id") or result.get("id") or "")
+    if not execution_id:
+        raise HTTPException(status_code=502, detail="Bolna did not return an execution ID")
+
+    session.source = "bolna"
+    session.demo_mode = not settings.live_dispatch_enabled
+    session.status = "listening"
+    session.bolna_execution_id = execution_id
+    session.last_activity_at = datetime.now(timezone.utc)
+    store.save_session(session)
+    await emit(StreamEvent(
+        event="listener.prompt",
+        session_id=session_id,
+        data={
+            "text": "Live Bolna intake call queued. Answer the configured stand-in phone.",
+            "live_call": True,
+            "execution_id": execution_id,
+        },
+    ))
+    intake_tasks[session_id] = asyncio.create_task(_poll_intake_call(session_id, execution_id))
+    return {
+        "session_id": session_id,
+        "status": str(result.get("status") or "queued"),
+        "execution_id": execution_id,
+        "live": True,
+        "downstream_actions_simulated": session.demo_mode,
+    }
 
 
 @app.post("/api/sessions/{session_id}/transcript", response_model=StoredSession)
@@ -293,7 +347,18 @@ def _session_for_execution(execution_id: str | None, hinted_session_id: str | No
 def _normalise_bolna_transcript(payload: dict[str, Any]) -> list[tuple[str, str]]:
     transcript = payload.get("transcript") or payload.get("conversation") or []
     if isinstance(transcript, str):
-        return [("caller", transcript)]
+        rows: list[tuple[str, str]] = []
+        for line in transcript.splitlines():
+            if ":" not in line:
+                continue
+            raw_speaker, text = line.split(":", 1)
+            raw_speaker = raw_speaker.strip().lower()
+            text = text.strip()
+            if raw_speaker not in {"assistant", "agent", "bot", "user", "caller", "human"} or not text:
+                continue
+            speaker = "agent" if raw_speaker in {"assistant", "agent", "bot"} else "caller"
+            rows.append((speaker, text))
+        return rows or [("caller", transcript.strip())]
     rows: list[tuple[str, str]] = []
     for item in transcript if isinstance(transcript, list) else []:
         if not isinstance(item, dict):
@@ -306,13 +371,7 @@ def _normalise_bolna_transcript(payload: dict[str, Any]) -> list[tuple[str, str]
     return rows
 
 
-@app.post("/api/webhooks/bolna")
-async def bolna_webhook(
-    payload: dict[str, Any] = Body(...),
-    x_ek_awaaz_secret: str | None = Header(default=None),
-) -> JSONResponse:
-    if settings.bolna_webhook_secret and x_ek_awaaz_secret != settings.bolna_webhook_secret:
-        raise HTTPException(status_code=401, detail="Invalid webhook secret")
+async def _apply_bolna_update(payload: dict[str, Any]) -> str:
     execution_id = str(payload.get("id") or payload.get("execution_id") or "") or None
     user_data = payload.get("user_data") if isinstance(payload.get("user_data"), dict) else {}
     hinted_session_id = user_data.get("session_id")
@@ -357,12 +416,43 @@ async def bolna_webhook(
             if should_dispatch:
                 schedule_dispatch(session, simulated=session.demo_mode)
             existing.add((speaker, text))
-    if bolna_status == "completed" and not external_action:
+    if bolna_status == "completed" and not external_action and not session.incident.dispatch_confirmed:
         session.status = "complete"
         session.ended_at = datetime.now(timezone.utc)
         store.save_session(session)
         await emit(StreamEvent(event="session.completed", session_id=session.incident.session_id, data={"source": "bolna"}))
-    return JSONResponse({"ok": True, "session_id": session.incident.session_id})
+    return session.incident.session_id
+
+
+async def _poll_intake_call(session_id: str, execution_id: str) -> None:
+    final_statuses = {"completed", "no-answer", "busy", "failed", "canceled", "stopped", "error", "balance-low"}
+    try:
+        while True:
+            payload = await orchestrator.bolna.get_execution(execution_id)
+            payload.setdefault("user_data", {"session_id": session_id})
+            await _apply_bolna_update(payload)
+            if str(payload.get("status") or "") in final_statuses:
+                return
+            await asyncio.sleep(3)
+    except asyncio.CancelledError:
+        raise
+    except Exception as exc:
+        await emit(StreamEvent(
+            event="error",
+            session_id=session_id,
+            data={"message": f"Could not refresh the live call: {str(exc)[:220]}"},
+        ))
+
+
+@app.post("/api/webhooks/bolna")
+async def bolna_webhook(
+    payload: dict[str, Any] = Body(...),
+    x_ek_awaaz_secret: str | None = Header(default=None),
+) -> JSONResponse:
+    if settings.bolna_webhook_secret and x_ek_awaaz_secret != settings.bolna_webhook_secret:
+        raise HTTPException(status_code=401, detail="Invalid webhook secret")
+    session_id = await _apply_bolna_update(payload)
+    return JSONResponse({"ok": True, "session_id": session_id})
 
 
 @app.post("/api/integrations/bolna/create-listener")

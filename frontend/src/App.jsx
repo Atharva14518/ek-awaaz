@@ -25,8 +25,8 @@ export default function App() {
     <div className="app-shell">
       <div className="demo-banner" role="status">
         <ShieldCheck size={15} aria-hidden="true" />
-        <span><strong>DEMO MODE</strong> · Calls go to test numbers only</span>
-        <span className="banner-status">{config.real_actions_enabled ? 'Stand-in calling enabled' : 'No real actions'}</span>
+        <span><strong>{config.live_call_ready ? 'CONTROLLED LIVE MODE' : 'DEMO MODE'}</strong> · Calls go to configured test numbers only</span>
+        <span className="banner-status">{config.live_dispatch_enabled ? 'Live intake + stand-in dispatch' : config.live_call_ready ? 'Live intake · simulated dispatch' : 'No real actions'}</span>
       </div>
       <header className="topbar">
         <Link className="brand" to="/" aria-label="Ek Awaaz home">
@@ -57,4 +57,3 @@ export default function App() {
     </div>
   )
 }
-

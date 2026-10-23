@@ -74,6 +74,17 @@ all external actions safely simulated:
 3. Deploy the `ek-awaaz` service, then open its `/api/health` endpoint once.
 4. Open the service URL and run both demo scenarios before presenting.
 
+For the **Call me live** button, add these secrets in Render before redeploying:
+
+- `BOLNA_API_KEY`
+- `BOLNA_LISTENER_AGENT_ID`
+- `LIVE_DEMO_CALLER_NUMBER` in E.164 format, such as `+919876543210`
+
+The Blueprint enables controlled live intake but keeps `LIVE_DISPATCH_ENABLED=false`.
+That means the Listener really calls and transcribes the configured phone, while
+the later ambulance/police/family steps stay simulated. Only enable live dispatch
+after every downstream recipient is a separate, verified stand-in number.
+
 The free service filesystem is ephemeral, so reports may reset after a restart.
 That is acceptable for the demo; attach a persistent disk to `/app/data` for
 longer-lived report history. Add provider secrets in Render only if you later
@@ -91,6 +102,8 @@ Copy `.env.example` to `.env`. The demo works without provider credentials.
 | `BOLNA_API_KEY` | Enables Bolna API requests |
 | `BOLNA_LISTENER_AGENT_ID` | Existing inbound listener agent |
 | `BOLNA_FROM_PHONE_NUMBER` | Bolna sender number for dispatcher calls |
+| `LIVE_DEMO_CALLER_NUMBER` | Single allowlisted phone used by **Call me live** |
+| `LIVE_DISPATCH_ENABLED` | Allows post-intake stand-in calls; keep `false` for judging |
 | `BOLNA_ALLOWED_RECIPIENTS` | Comma-separated stand-in numbers; never real emergency numbers |
 | `TWILIO_*` | Optional real SMS configuration |
 | `FAMILY_CONTACT_*` | Demo or allowlisted contact details |

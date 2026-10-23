@@ -26,6 +26,10 @@ export const api = {
   getSession: (id) => request(`/api/sessions/${id}`),
   clearSession: (id) => request(`/api/sessions/${id}`, { method: 'DELETE' }),
   simulate: (id, scenario = 'accident') => request(`/api/sessions/${id}/simulate?scenario=${scenario}`, { method: 'POST' }),
+  startLiveCall: (id) => request(`/api/sessions/${id}/live-call`, {
+    method: 'POST',
+    body: JSON.stringify({ confirm: true }),
+  }),
   stop: (id) => request(`/api/sessions/${id}/stop`, { method: 'POST' }),
   confirm: (id, confirmed, correction = null) => request(`/api/sessions/${id}/confirm`, {
     method: 'POST',
@@ -50,4 +54,3 @@ export function websocketUrl(sessionId) {
   const host = window.location.port === '5173' ? `${window.location.hostname}:8000` : window.location.host
   return `${protocol}//${host}/ws/sessions/${sessionId}`
 }
-

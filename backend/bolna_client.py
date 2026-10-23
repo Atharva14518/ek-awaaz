@@ -35,6 +35,15 @@ class BolnaClient:
             and self.settings.bolna_dispatch_agent_id
         )
 
+    @property
+    def intake_configured(self) -> bool:
+        return bool(
+            self.settings.allow_real_actions
+            and self.settings.bolna_api_key
+            and self.settings.bolna_listener_agent_id
+            and self.settings.live_demo_caller_number
+        )
+
     @staticmethod
     def _digits(phone: str) -> str:
         return re.sub(r"\D", "", phone)
@@ -48,7 +57,11 @@ class BolnaClient:
             for number in FORBIDDEN_EMERGENCY_NUMBERS
         ):
             raise BolnaSafetyError("Emergency-service numbers are permanently blocked")
-        allowed = {self._digits(number) for number in self.settings.contacts.values() if number}
+        allowed = {
+            self._digits(number)
+            for number in [*self.settings.contacts.values(), self.settings.live_demo_caller_number]
+            if number
+        }
         if digits not in allowed:
             raise BolnaSafetyError("Recipient is not one of the configured stand-in contacts")
 
@@ -81,6 +94,25 @@ class BolnaClient:
                 "recipient_role": target,
                 "dispatch_script": script,
                 "demo_contact_only": True,
+            },
+        }
+        if self.settings.bolna_from_phone_number:
+            payload["from_phone_number"] = self.settings.bolna_from_phone_number
+        return await self._request("POST", "/call", json=payload)
+
+    async def place_intake_call(self, session_id: str) -> dict[str, Any]:
+        """Call the single configured judge/demo phone with the Listener agent."""
+        if not self.intake_configured:
+            raise BolnaSafetyError("Live intake calling is disabled or incomplete")
+        phone = self.settings.live_demo_caller_number
+        self._assert_safe_recipient(phone)
+        await self._take_rate_slot()
+        payload: dict[str, Any] = {
+            "agent_id": self.settings.bolna_listener_agent_id,
+            "recipient_phone_number": phone,
+            "user_data": {
+                "session_id": session_id,
+                "call_purpose": "emergency_intake_demo",
             },
         }
         if self.settings.bolna_from_phone_number:
@@ -179,4 +211,3 @@ class BolnaClient:
         # endpoint. Do not guess one. The local kill switch prevents new calls
         # and cancels pending work; configure provider-side termination if needed.
         _ = execution_id
-

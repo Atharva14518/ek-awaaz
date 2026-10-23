@@ -1,14 +1,20 @@
 from __future__ import annotations
 
+import asyncio
 import os
+from dataclasses import replace
 from pathlib import Path
+from unittest.mock import AsyncMock
 
 os.environ["DATABASE_PATH"] = str(Path(__file__).parent / "test.db")
 os.environ["SIMULATOR_DELAY_SECONDS"] = "0.001"
+os.environ["DEMO_MODE"] = "true"
+os.environ["ALLOW_REAL_ACTIONS"] = "false"
+os.environ["LIVE_DISPATCH_ENABLED"] = "false"
 
 from fastapi.testclient import TestClient
 
-from backend.main import app
+from backend.main import _normalise_bolna_transcript, app
 from backend.bolna_client import BolnaClient, BolnaSafetyError
 from backend.config import get_settings
 from backend.extraction import ExtractionResult, apply_extraction
@@ -107,3 +113,34 @@ def test_emergency_numbers_are_blocked_at_the_adapter() -> None:
     for number in ["100", "101", "102", "108", "112", "+91 112"]:
         with pytest.raises(BolnaSafetyError):
             client._assert_safe_recipient(number)
+
+
+def test_bolna_string_transcript_preserves_speakers() -> None:
+    rows = _normalise_bolna_transcript({
+        "transcript": "assistant: Kya hua?\nuser: Bike accident hua hai.\nassistant: Location?\nuser: Blue temple ke paas.",
+    })
+    assert rows == [
+        ("agent", "Kya hua?"),
+        ("caller", "Bike accident hua hai."),
+        ("agent", "Location?"),
+        ("caller", "Blue temple ke paas."),
+    ]
+
+
+def test_live_intake_uses_listener_and_allowlisted_number() -> None:
+    live_settings = replace(
+        get_settings(),
+        demo_mode=False,
+        allow_real_actions=True,
+        bolna_api_key="test-key",
+        bolna_listener_agent_id="listener-agent",
+        live_demo_caller_number="+919876543210",
+    )
+    client = BolnaClient(live_settings)
+    client._request = AsyncMock(return_value={"status": "queued", "execution_id": "exec-1"})
+    result = asyncio.run(client.place_intake_call("session-1"))
+    assert result["execution_id"] == "exec-1"
+    payload = client._request.await_args.kwargs["json"]
+    assert payload["agent_id"] == "listener-agent"
+    assert payload["recipient_phone_number"] == "+919876543210"
+    assert payload["user_data"]["session_id"] == "session-1"
