@@ -64,6 +64,21 @@ created from `.env.example`:
 docker run --rm --env-file .env -p 8000:8000 -v "$(pwd)/data:/app/data" ek-awaaz
 ```
 
+### Fastest public demo: Render
+
+The included `render.yaml` deploys the Docker image as one web service and keeps
+all external actions safely simulated:
+
+1. Push the repository to GitHub.
+2. In Render, choose **New → Blueprint** and select this repository.
+3. Deploy the `ek-awaaz` service, then open its `/api/health` endpoint once.
+4. Open the service URL and run both demo scenarios before presenting.
+
+The free service filesystem is ephemeral, so reports may reset after a restart.
+That is acceptable for the demo; attach a persistent disk to `/app/data` for
+longer-lived report history. Add provider secrets in Render only if you later
+need the real Bolna path—never commit `.env`.
+
 ## Configuration
 
 Copy `.env.example` to `.env`. The demo works without provider credentials.

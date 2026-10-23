@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom'
 export default function HomePage({ config }) {
   const [copied, setCopied] = useState(false)
   const copyNumber = async () => {
-    await navigator.clipboard.writeText(config.demo_phone_number || '+91 00000 00000')
+    await navigator.clipboard.writeText(config.demo_phone_number)
     setCopied(true)
     window.setTimeout(() => setCopied(false), 1600)
   }
@@ -42,11 +42,13 @@ export default function HomePage({ config }) {
         </div>
       </section>
 
-      <section className="number-strip" aria-label="Demo number">
-        <div><span className="eyebrow">Try the demo line</span><strong>{config.demo_phone_number || '+91 00000 00000'}</strong></div>
-        <button className="copy-button" onClick={copyNumber}>{copied ? <Check size={17} /> : <Clipboard size={17} />}{copied ? 'Copied' : 'Copy number'}</button>
-        <span className="number-note">Not a real emergency number</span>
-      </section>
+      {config.demo_phone_number && (
+        <section className="number-strip" aria-label="Demo number">
+          <div><span className="eyebrow">Try the demo line</span><strong>{config.demo_phone_number}</strong></div>
+          <button className="copy-button" onClick={copyNumber}>{copied ? <Check size={17} /> : <Clipboard size={17} />}{copied ? 'Copied' : 'Copy number'}</button>
+          <span className="number-note">Not a real emergency number</span>
+        </section>
+      )}
 
       <section className="how-it-works">
         <div className="section-heading"><span className="eyebrow">How it works</span><h2>Less to remember.<br />More help in motion.</h2></div>
@@ -59,4 +61,3 @@ export default function HomePage({ config }) {
     </div>
   )
 }
-

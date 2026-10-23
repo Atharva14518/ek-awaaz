@@ -95,7 +95,7 @@ async def public_config() -> dict[str, Any]:
     return {
         "demo_mode": settings.demo_mode,
         "real_actions_enabled": settings.allow_real_actions,
-        "demo_phone_number": settings.bolna_from_phone_number or "+91 00000 00000",
+        "demo_phone_number": settings.bolna_from_phone_number,
         "listener_agent_configured": bool(settings.bolna_listener_agent_id),
         "services": {
             "groq": bool(settings.groq_api_key),
